@@ -3275,44 +3275,6 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (107:8) {#if item.thumbnail.url}
-function create_if_block$1(ctx) {
-	let img;
-	let img_src_value;
-	let img_alt_value;
-
-	return {
-		c() {
-			img = element("img");
-			this.h();
-		},
-		l(nodes) {
-			img = claim_element(nodes, "IMG", { src: true, alt: true, class: true });
-			this.h();
-		},
-		h() {
-			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[30].thumbnail.url)) attr(img, "src", img_src_value);
-			attr(img, "alt", img_alt_value = /*item*/ ctx[30].thumbnail.alt);
-			attr(img, "class", "svelte-hf1yy6");
-		},
-		m(target, anchor) {
-			insert_hydration(target, img, anchor);
-		},
-		p(ctx, dirty) {
-			if (dirty[0] & /*items*/ 2 && !src_url_equal(img.src, img_src_value = /*item*/ ctx[30].thumbnail.url)) {
-				attr(img, "src", img_src_value);
-			}
-
-			if (dirty[0] & /*items*/ 2 && img_alt_value !== (img_alt_value = /*item*/ ctx[30].thumbnail.alt)) {
-				attr(img, "alt", img_alt_value);
-			}
-		},
-		d(detaching) {
-			if (detaching) detach(img);
-		}
-	};
-}
-
 // (95:6) {#each items as item}
 function create_each_block$1(ctx) {
 	let li;
@@ -3330,15 +3292,12 @@ function create_each_block$1(ctx) {
 	let t4;
 	let div1;
 	let t5;
-	let t6;
 	let each_value_1 = /*item*/ ctx[30].links;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
 	}
-
-	let if_block = /*item*/ ctx[30].thumbnail.url && create_if_block$1(ctx);
 
 	return {
 		c() {
@@ -3359,8 +3318,6 @@ function create_each_block$1(ctx) {
 			}
 
 			t5 = space();
-			if (if_block) if_block.c();
-			t6 = space();
 			this.h();
 		},
 		l(nodes) {
@@ -3392,18 +3349,16 @@ function create_each_block$1(ctx) {
 			div1_nodes.forEach(detach);
 			div2_nodes.forEach(detach);
 			t5 = claim_space(li_nodes);
-			if (if_block) if_block.l(li_nodes);
-			t6 = claim_space(li_nodes);
 			li_nodes.forEach(detach);
 			this.h();
 		},
 		h() {
-			attr(span, "class", "date svelte-hf1yy6");
-			attr(h3, "class", "title svelte-hf1yy6");
-			attr(div0, "class", "description svelte-hf1yy6");
-			attr(div1, "class", "links svelte-hf1yy6");
+			attr(span, "class", "date svelte-1k1jj9n");
+			attr(h3, "class", "title svelte-1k1jj9n");
+			attr(div0, "class", "description svelte-1k1jj9n");
+			attr(div1, "class", "links svelte-1k1jj9n");
 			attr(div2, "class", "post-info");
-			attr(li, "class", "svelte-hf1yy6");
+			attr(li, "class", "svelte-1k1jj9n");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -3424,8 +3379,6 @@ function create_each_block$1(ctx) {
 			}
 
 			append_hydration(li, t5);
-			if (if_block) if_block.m(li, null);
-			append_hydration(li, t6);
 		},
 		p(ctx, dirty) {
 			if (dirty[0] & /*items*/ 2 && t0_value !== (t0_value = /*item*/ ctx[30].date + "")) set_data(t0, t0_value);
@@ -3453,24 +3406,10 @@ function create_each_block$1(ctx) {
 
 				each_blocks.length = each_value_1.length;
 			}
-
-			if (/*item*/ ctx[30].thumbnail.url) {
-				if (if_block) {
-					if_block.p(ctx, dirty);
-				} else {
-					if_block = create_if_block$1(ctx);
-					if_block.c();
-					if_block.m(li, t6);
-				}
-			} else if (if_block) {
-				if_block.d(1);
-				if_block = null;
-			}
 		},
 		d(detaching) {
 			if (detaching) detach(li);
 			destroy_each(each_blocks, detaching);
-			if (if_block) if_block.d();
 		}
 	};
 }
@@ -3537,8 +3476,8 @@ function create_fragment$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(h2, "class", "heading svelte-hf1yy6");
-			attr(ul, "class", "items svelte-hf1yy6");
+			attr(h2, "class", "heading svelte-1k1jj9n");
+			attr(ul, "class", "items svelte-1k1jj9n");
 			attr(div0, "class", "section-container");
 			attr(div1, "class", "component");
 			attr(div2, "class", "section has-component");
@@ -4954,7 +4893,7 @@ function create_fragment$7(ctx) {
 							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
 							"size": 77
 						},
-						"variation": "circle"
+						"variation": "square"
 					},
 					"description": {
 						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
@@ -5020,25 +4959,6 @@ function create_fragment$7(ctx) {
 									}
 								}
 							]
-						},
-						{
-							"date": "01.01.22",
-							"title": "Second project",
-							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
-							"thumbnail": {
-								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"alt": "Mountains by the sea",
-								"size": null
-							},
-							"links": [
-								{
-									"link": {
-										"label": "Visit Site",
-										"url": "/second-project"
-									}
-								}
-							]
 						}
 					]
 				},
@@ -5087,7 +5007,7 @@ function create_fragment$7(ctx) {
 						"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
 						"size": 77
 					},
-					"variation": "circle"
+					"variation": "square"
 				}
 			}
 		});
@@ -5173,7 +5093,7 @@ function create_fragment$7(ctx) {
 							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
 							"size": 77
 						},
-						"variation": "circle"
+						"variation": "square"
 					},
 					"description": {
 						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
@@ -5239,25 +5159,6 @@ function create_fragment$7(ctx) {
 									}
 								}
 							]
-						},
-						{
-							"date": "01.01.22",
-							"title": "Second project",
-							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
-							"thumbnail": {
-								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"alt": "Mountains by the sea",
-								"size": null
-							},
-							"links": [
-								{
-									"link": {
-										"label": "Visit Site",
-										"url": "/second-project"
-									}
-								}
-							]
 						}
 					]
 				},
@@ -5316,25 +5217,6 @@ function create_fragment$7(ctx) {
 								"link": {
 									"label": "Check it out on GitHub",
 									"url": "https://github.com/robindelaater/multisafepay-js"
-								}
-							}
-						]
-					},
-					{
-						"date": "01.01.22",
-						"title": "Second project",
-						"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
-						"thumbnail": {
-							"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-							"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-							"alt": "Mountains by the sea",
-							"size": null
-						},
-						"links": [
-							{
-								"link": {
-									"label": "Visit Site",
-									"url": "/second-project"
 								}
 							}
 						]
@@ -5424,7 +5306,7 @@ function create_fragment$7(ctx) {
 							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
 							"size": 77
 						},
-						"variation": "circle"
+						"variation": "square"
 					},
 					"description": {
 						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
@@ -5487,25 +5369,6 @@ function create_fragment$7(ctx) {
 									"link": {
 										"label": "Check it out on GitHub",
 										"url": "https://github.com/robindelaater/multisafepay-js"
-									}
-								}
-							]
-						},
-						{
-							"date": "01.01.22",
-							"title": "Second project",
-							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
-							"thumbnail": {
-								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"alt": "Mountains by the sea",
-								"size": null
-							},
-							"links": [
-								{
-									"link": {
-										"label": "Visit Site",
-										"url": "/second-project"
 									}
 								}
 							]
@@ -5655,7 +5518,7 @@ function create_fragment$7(ctx) {
 							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
 							"size": 77
 						},
-						"variation": "circle"
+						"variation": "square"
 					},
 					"description": {
 						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
@@ -5718,25 +5581,6 @@ function create_fragment$7(ctx) {
 									"link": {
 										"label": "Check it out on GitHub",
 										"url": "https://github.com/robindelaater/multisafepay-js"
-									}
-								}
-							]
-						},
-						{
-							"date": "01.01.22",
-							"title": "Second project",
-							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
-							"thumbnail": {
-								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"alt": "Mountains by the sea",
-								"size": null
-							},
-							"links": [
-								{
-									"link": {
-										"label": "Visit Site",
-										"url": "/second-project"
 									}
 								}
 							]
