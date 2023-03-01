@@ -2782,24 +2782,24 @@ class Component$1 extends SvelteComponent {
 
 function get_each_context(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[30] = list[i].link;
-	child_ctx[31] = list[i].icon;
+	child_ctx[29] = list[i].link;
+	child_ctx[30] = list[i].icon;
 	return child_ctx;
 }
 
-// (142:8) {#each social_links as { link, icon }}
+// (141:8) {#each social_links as { link, icon }}
 function create_each_block(ctx) {
 	let li;
 	let a;
 	let icon;
 	let t0;
 	let span;
-	let t1_value = /*link*/ ctx[30].label + "";
+	let t1_value = /*link*/ ctx[29].label + "";
 	let t1;
 	let a_href_value;
 	let t2;
 	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[31] } });
+	icon = new Component$1({ props: { icon: /*icon*/ ctx[30] } });
 
 	return {
 		c() {
@@ -2837,7 +2837,7 @@ function create_each_block(ctx) {
 		},
 		h() {
 			attr(span, "class", "svelte-1byd7us");
-			attr(a, "href", a_href_value = /*link*/ ctx[30].url);
+			attr(a, "href", a_href_value = /*link*/ ctx[29].url);
 			attr(a, "target", "_blank");
 			attr(a, "rel", "noreferrer");
 			attr(a, "class", "svelte-1byd7us");
@@ -2855,11 +2855,11 @@ function create_each_block(ctx) {
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
-			if (dirty[0] & /*social_links*/ 1) icon_changes.icon = /*icon*/ ctx[31];
+			if (dirty[0] & /*social_links*/ 1) icon_changes.icon = /*icon*/ ctx[30];
 			icon.$set(icon_changes);
-			if ((!current || dirty[0] & /*social_links*/ 1) && t1_value !== (t1_value = /*link*/ ctx[30].label + "")) set_data(t1, t1_value);
+			if ((!current || dirty[0] & /*social_links*/ 1) && t1_value !== (t1_value = /*link*/ ctx[29].label + "")) set_data(t1, t1_value);
 
-			if (!current || dirty[0] & /*social_links*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[30].url)) {
+			if (!current || dirty[0] & /*social_links*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[29].url)) {
 				attr(a, "href", a_href_value);
 			}
 		},
@@ -3089,7 +3089,6 @@ function instance$2($$self, $$props, $$invalidate) {
 	let { fac } = $$props;
 	let { favicon } = $$props;
 	let { afaaz } = $$props;
-	let { ooupd } = $$props;
 	let { kpvqf } = $$props;
 	let { optkq } = $$props;
 	let { vcrof } = $$props;
@@ -3121,23 +3120,22 @@ function instance$2($$self, $$props, $$invalidate) {
 		if ('fac' in $$props) $$invalidate(10, fac = $$props.fac);
 		if ('favicon' in $$props) $$invalidate(11, favicon = $$props.favicon);
 		if ('afaaz' in $$props) $$invalidate(12, afaaz = $$props.afaaz);
-		if ('ooupd' in $$props) $$invalidate(13, ooupd = $$props.ooupd);
-		if ('kpvqf' in $$props) $$invalidate(14, kpvqf = $$props.kpvqf);
-		if ('optkq' in $$props) $$invalidate(15, optkq = $$props.optkq);
-		if ('vcrof' in $$props) $$invalidate(16, vcrof = $$props.vcrof);
-		if ('ikshv' in $$props) $$invalidate(17, ikshv = $$props.ikshv);
-		if ('t' in $$props) $$invalidate(18, t = $$props.t);
-		if ('ti' in $$props) $$invalidate(19, ti = $$props.ti);
-		if ('tit' in $$props) $$invalidate(20, tit = $$props.tit);
-		if ('titl' in $$props) $$invalidate(21, titl = $$props.titl);
-		if ('title' in $$props) $$invalidate(22, title = $$props.title);
-		if ('desc' in $$props) $$invalidate(23, desc = $$props.desc);
-		if ('descr' in $$props) $$invalidate(24, descr = $$props.descr);
-		if ('descri' in $$props) $$invalidate(25, descri = $$props.descri);
-		if ('descrip' in $$props) $$invalidate(26, descrip = $$props.descrip);
-		if ('descript' in $$props) $$invalidate(27, descript = $$props.descript);
-		if ('descripti' in $$props) $$invalidate(28, descripti = $$props.descripti);
-		if ('descriptio' in $$props) $$invalidate(29, descriptio = $$props.descriptio);
+		if ('kpvqf' in $$props) $$invalidate(13, kpvqf = $$props.kpvqf);
+		if ('optkq' in $$props) $$invalidate(14, optkq = $$props.optkq);
+		if ('vcrof' in $$props) $$invalidate(15, vcrof = $$props.vcrof);
+		if ('ikshv' in $$props) $$invalidate(16, ikshv = $$props.ikshv);
+		if ('t' in $$props) $$invalidate(17, t = $$props.t);
+		if ('ti' in $$props) $$invalidate(18, ti = $$props.ti);
+		if ('tit' in $$props) $$invalidate(19, tit = $$props.tit);
+		if ('titl' in $$props) $$invalidate(20, titl = $$props.titl);
+		if ('title' in $$props) $$invalidate(21, title = $$props.title);
+		if ('desc' in $$props) $$invalidate(22, desc = $$props.desc);
+		if ('descr' in $$props) $$invalidate(23, descr = $$props.descr);
+		if ('descri' in $$props) $$invalidate(24, descri = $$props.descri);
+		if ('descrip' in $$props) $$invalidate(25, descrip = $$props.descrip);
+		if ('descript' in $$props) $$invalidate(26, descript = $$props.descript);
+		if ('descripti' in $$props) $$invalidate(27, descripti = $$props.descripti);
+		if ('descriptio' in $$props) $$invalidate(28, descriptio = $$props.descriptio);
 		if ('description' in $$props) $$invalidate(2, description = $$props.description);
 		if ('portrait' in $$props) $$invalidate(3, portrait = $$props.portrait);
 	};
@@ -3156,7 +3154,6 @@ function instance$2($$self, $$props, $$invalidate) {
 		fac,
 		favicon,
 		afaaz,
-		ooupd,
 		kpvqf,
 		optkq,
 		vcrof,
@@ -3198,23 +3195,22 @@ class Component$2 extends SvelteComponent {
 				fac: 10,
 				favicon: 11,
 				afaaz: 12,
-				ooupd: 13,
-				kpvqf: 14,
-				optkq: 15,
-				vcrof: 16,
-				ikshv: 17,
-				t: 18,
-				ti: 19,
-				tit: 20,
-				titl: 21,
-				title: 22,
-				desc: 23,
-				descr: 24,
-				descri: 25,
-				descrip: 26,
-				descript: 27,
-				descripti: 28,
-				descriptio: 29,
+				kpvqf: 13,
+				optkq: 14,
+				vcrof: 15,
+				ikshv: 16,
+				t: 17,
+				ti: 18,
+				tit: 19,
+				titl: 20,
+				title: 21,
+				desc: 22,
+				descr: 23,
+				descri: 24,
+				descrip: 25,
+				descript: 26,
+				descripti: 27,
+				descriptio: 28,
 				description: 2,
 				portrait: 3
 			},
@@ -3226,195 +3222,22 @@ class Component$2 extends SvelteComponent {
 
 /* generated by Svelte v3.55.1 */
 
-function create_fragment$3(ctx) {
-	let div1;
-	let div0;
-	let h2;
-	let t0;
-	let p;
-	let t1;
-
-	return {
-		c() {
-			div1 = element("div");
-			div0 = element("div");
-			h2 = element("h2");
-			t0 = text("Welcome to my portfolio");
-			p = element("p");
-			t1 = text("This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.");
-			this.h();
-		},
-		l(nodes) {
-			div1 = claim_element(nodes, "DIV", { class: true, id: true });
-			var div1_nodes = children(div1);
-			div0 = claim_element(div1_nodes, "DIV", { class: true });
-			var div0_nodes = children(div0);
-			h2 = claim_element(div0_nodes, "H2", {});
-			var h2_nodes = children(h2);
-			t0 = claim_text(h2_nodes, "Welcome to my portfolio");
-			h2_nodes.forEach(detach);
-			p = claim_element(div0_nodes, "P", {});
-			var p_nodes = children(p);
-			t1 = claim_text(p_nodes, "This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.");
-			p_nodes.forEach(detach);
-			div0_nodes.forEach(detach);
-			div1_nodes.forEach(detach);
-			this.h();
-		},
-		h() {
-			attr(div0, "class", "content");
-			attr(div1, "class", "section has-content");
-			attr(div1, "id", "ooupd");
-		},
-		m(target, anchor) {
-			insert_hydration(target, div1, anchor);
-			append_hydration(div1, div0);
-			append_hydration(div0, h2);
-			append_hydration(h2, t0);
-			append_hydration(div0, p);
-			append_hydration(p, t1);
-		},
-		p: noop,
-		i: noop,
-		o: noop,
-		d(detaching) {
-			if (detaching) detach(div1);
-		}
-	};
-}
-
-function instance$3($$self, $$props, $$invalidate) {
-	let { social_links } = $$props;
-	let { site_nav } = $$props;
-	let { logo } = $$props;
-	let { name } = $$props;
-	let { theme } = $$props;
-	let { variation } = $$props;
-	let { f } = $$props;
-	let { faci } = $$props;
-	let { fac } = $$props;
-	let { favicon } = $$props;
-	let { ikshv } = $$props;
-	let { t } = $$props;
-	let { ti } = $$props;
-	let { tit } = $$props;
-	let { titl } = $$props;
-	let { title } = $$props;
-	let { desc } = $$props;
-	let { descr } = $$props;
-	let { descri } = $$props;
-	let { descrip } = $$props;
-	let { descript } = $$props;
-	let { descripti } = $$props;
-	let { descriptio } = $$props;
-	let { description } = $$props;
-
-	$$self.$$set = $$props => {
-		if ('social_links' in $$props) $$invalidate(0, social_links = $$props.social_links);
-		if ('site_nav' in $$props) $$invalidate(1, site_nav = $$props.site_nav);
-		if ('logo' in $$props) $$invalidate(2, logo = $$props.logo);
-		if ('name' in $$props) $$invalidate(3, name = $$props.name);
-		if ('theme' in $$props) $$invalidate(4, theme = $$props.theme);
-		if ('variation' in $$props) $$invalidate(5, variation = $$props.variation);
-		if ('f' in $$props) $$invalidate(6, f = $$props.f);
-		if ('faci' in $$props) $$invalidate(7, faci = $$props.faci);
-		if ('fac' in $$props) $$invalidate(8, fac = $$props.fac);
-		if ('favicon' in $$props) $$invalidate(9, favicon = $$props.favicon);
-		if ('ikshv' in $$props) $$invalidate(10, ikshv = $$props.ikshv);
-		if ('t' in $$props) $$invalidate(11, t = $$props.t);
-		if ('ti' in $$props) $$invalidate(12, ti = $$props.ti);
-		if ('tit' in $$props) $$invalidate(13, tit = $$props.tit);
-		if ('titl' in $$props) $$invalidate(14, titl = $$props.titl);
-		if ('title' in $$props) $$invalidate(15, title = $$props.title);
-		if ('desc' in $$props) $$invalidate(16, desc = $$props.desc);
-		if ('descr' in $$props) $$invalidate(17, descr = $$props.descr);
-		if ('descri' in $$props) $$invalidate(18, descri = $$props.descri);
-		if ('descrip' in $$props) $$invalidate(19, descrip = $$props.descrip);
-		if ('descript' in $$props) $$invalidate(20, descript = $$props.descript);
-		if ('descripti' in $$props) $$invalidate(21, descripti = $$props.descripti);
-		if ('descriptio' in $$props) $$invalidate(22, descriptio = $$props.descriptio);
-		if ('description' in $$props) $$invalidate(23, description = $$props.description);
-	};
-
-	return [
-		social_links,
-		site_nav,
-		logo,
-		name,
-		theme,
-		variation,
-		f,
-		faci,
-		fac,
-		favicon,
-		ikshv,
-		t,
-		ti,
-		tit,
-		titl,
-		title,
-		desc,
-		descr,
-		descri,
-		descrip,
-		descript,
-		descripti,
-		descriptio,
-		description
-	];
-}
-
-class Component$3 extends SvelteComponent {
-	constructor(options) {
-		super();
-
-		init(this, options, instance$3, create_fragment$3, safe_not_equal, {
-			social_links: 0,
-			site_nav: 1,
-			logo: 2,
-			name: 3,
-			theme: 4,
-			variation: 5,
-			f: 6,
-			faci: 7,
-			fac: 8,
-			favicon: 9,
-			ikshv: 10,
-			t: 11,
-			ti: 12,
-			tit: 13,
-			titl: 14,
-			title: 15,
-			desc: 16,
-			descr: 17,
-			descri: 18,
-			descrip: 19,
-			descript: 20,
-			descripti: 21,
-			descriptio: 22,
-			description: 23
-		});
-	}
-}
-
-/* generated by Svelte v3.55.1 */
-
 function get_each_context$1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[31] = list[i];
+	child_ctx[30] = list[i];
 	return child_ctx;
 }
 
 function get_each_context_1(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[34] = list[i].link;
+	child_ctx[33] = list[i].link;
 	return child_ctx;
 }
 
-// (103:12) {#each item.links as {link}}
+// (102:12) {#each item.links as {link}}
 function create_each_block_1(ctx) {
 	let a;
-	let t_1_value = /*link*/ ctx[34].label + "";
+	let t_1_value = /*link*/ ctx[33].label + "";
 	let t_1;
 	let a_href_value;
 
@@ -3433,16 +3256,16 @@ function create_each_block_1(ctx) {
 		},
 		h() {
 			attr(a, "class", "link");
-			attr(a, "href", a_href_value = /*link*/ ctx[34].url);
+			attr(a, "href", a_href_value = /*link*/ ctx[33].url);
 		},
 		m(target, anchor) {
 			insert_hydration(target, a, anchor);
 			append_hydration(a, t_1);
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*items*/ 2 && t_1_value !== (t_1_value = /*link*/ ctx[34].label + "")) set_data(t_1, t_1_value);
+			if (dirty[0] & /*items*/ 2 && t_1_value !== (t_1_value = /*link*/ ctx[33].label + "")) set_data(t_1, t_1_value);
 
-			if (dirty[0] & /*items*/ 2 && a_href_value !== (a_href_value = /*link*/ ctx[34].url)) {
+			if (dirty[0] & /*items*/ 2 && a_href_value !== (a_href_value = /*link*/ ctx[33].url)) {
 				attr(a, "href", a_href_value);
 			}
 		},
@@ -3452,7 +3275,7 @@ function create_each_block_1(ctx) {
 	};
 }
 
-// (108:8) {#if item.thumbnail.url}
+// (107:8) {#if item.thumbnail.url}
 function create_if_block$1(ctx) {
 	let img;
 	let img_src_value;
@@ -3468,19 +3291,19 @@ function create_if_block$1(ctx) {
 			this.h();
 		},
 		h() {
-			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[31].thumbnail.url)) attr(img, "src", img_src_value);
-			attr(img, "alt", img_alt_value = /*item*/ ctx[31].thumbnail.alt);
+			if (!src_url_equal(img.src, img_src_value = /*item*/ ctx[30].thumbnail.url)) attr(img, "src", img_src_value);
+			attr(img, "alt", img_alt_value = /*item*/ ctx[30].thumbnail.alt);
 			attr(img, "class", "svelte-hf1yy6");
 		},
 		m(target, anchor) {
 			insert_hydration(target, img, anchor);
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*items*/ 2 && !src_url_equal(img.src, img_src_value = /*item*/ ctx[31].thumbnail.url)) {
+			if (dirty[0] & /*items*/ 2 && !src_url_equal(img.src, img_src_value = /*item*/ ctx[30].thumbnail.url)) {
 				attr(img, "src", img_src_value);
 			}
 
-			if (dirty[0] & /*items*/ 2 && img_alt_value !== (img_alt_value = /*item*/ ctx[31].thumbnail.alt)) {
+			if (dirty[0] & /*items*/ 2 && img_alt_value !== (img_alt_value = /*item*/ ctx[30].thumbnail.alt)) {
 				attr(img, "alt", img_alt_value);
 			}
 		},
@@ -3490,32 +3313,32 @@ function create_if_block$1(ctx) {
 	};
 }
 
-// (96:6) {#each items as item}
+// (95:6) {#each items as item}
 function create_each_block$1(ctx) {
 	let li;
 	let div2;
 	let span;
-	let t0_value = /*item*/ ctx[31].date + "";
+	let t0_value = /*item*/ ctx[30].date + "";
 	let t0;
 	let t1;
 	let h3;
-	let t2_value = /*item*/ ctx[31].title + "";
+	let t2_value = /*item*/ ctx[30].title + "";
 	let t2;
 	let t3;
 	let div0;
-	let raw_value = /*item*/ ctx[31].description + "";
+	let raw_value = /*item*/ ctx[30].description + "";
 	let t4;
 	let div1;
 	let t5;
 	let t6;
-	let each_value_1 = /*item*/ ctx[31].links;
+	let each_value_1 = /*item*/ ctx[30].links;
 	let each_blocks = [];
 
 	for (let i = 0; i < each_value_1.length; i += 1) {
 		each_blocks[i] = create_each_block_1(get_each_context_1(ctx, each_value_1, i));
 	}
 
-	let if_block = /*item*/ ctx[31].thumbnail.url && create_if_block$1(ctx);
+	let if_block = /*item*/ ctx[30].thumbnail.url && create_if_block$1(ctx);
 
 	return {
 		c() {
@@ -3605,11 +3428,11 @@ function create_each_block$1(ctx) {
 			append_hydration(li, t6);
 		},
 		p(ctx, dirty) {
-			if (dirty[0] & /*items*/ 2 && t0_value !== (t0_value = /*item*/ ctx[31].date + "")) set_data(t0, t0_value);
-			if (dirty[0] & /*items*/ 2 && t2_value !== (t2_value = /*item*/ ctx[31].title + "")) set_data(t2, t2_value);
-			if (dirty[0] & /*items*/ 2 && raw_value !== (raw_value = /*item*/ ctx[31].description + "")) div0.innerHTML = raw_value;
+			if (dirty[0] & /*items*/ 2 && t0_value !== (t0_value = /*item*/ ctx[30].date + "")) set_data(t0, t0_value);
+			if (dirty[0] & /*items*/ 2 && t2_value !== (t2_value = /*item*/ ctx[30].title + "")) set_data(t2, t2_value);
+			if (dirty[0] & /*items*/ 2 && raw_value !== (raw_value = /*item*/ ctx[30].description + "")) div0.innerHTML = raw_value;
 			if (dirty[0] & /*items*/ 2) {
-				each_value_1 = /*item*/ ctx[31].links;
+				each_value_1 = /*item*/ ctx[30].links;
 				let i;
 
 				for (i = 0; i < each_value_1.length; i += 1) {
@@ -3631,7 +3454,7 @@ function create_each_block$1(ctx) {
 				each_blocks.length = each_value_1.length;
 			}
 
-			if (/*item*/ ctx[31].thumbnail.url) {
+			if (/*item*/ ctx[30].thumbnail.url) {
 				if (if_block) {
 					if_block.p(ctx, dirty);
 				} else {
@@ -3652,7 +3475,7 @@ function create_each_block$1(ctx) {
 	};
 }
 
-function create_fragment$4(ctx) {
+function create_fragment$3(ctx) {
 	let div2;
 	let div1;
 	let section;
@@ -3770,7 +3593,7 @@ function create_fragment$4(ctx) {
 	};
 }
 
-function instance$4($$self, $$props, $$invalidate) {
+function instance$3($$self, $$props, $$invalidate) {
 	let { social_links } = $$props;
 	let { site_nav } = $$props;
 	let { logo } = $$props;
@@ -3782,7 +3605,6 @@ function instance$4($$self, $$props, $$invalidate) {
 	let { fac } = $$props;
 	let { favicon } = $$props;
 	let { afaaz } = $$props;
-	let { ooupd } = $$props;
 	let { kpvqf } = $$props;
 	let { optkq } = $$props;
 	let { vcrof } = $$props;
@@ -3815,24 +3637,23 @@ function instance$4($$self, $$props, $$invalidate) {
 		if ('fac' in $$props) $$invalidate(10, fac = $$props.fac);
 		if ('favicon' in $$props) $$invalidate(11, favicon = $$props.favicon);
 		if ('afaaz' in $$props) $$invalidate(12, afaaz = $$props.afaaz);
-		if ('ooupd' in $$props) $$invalidate(13, ooupd = $$props.ooupd);
-		if ('kpvqf' in $$props) $$invalidate(14, kpvqf = $$props.kpvqf);
-		if ('optkq' in $$props) $$invalidate(15, optkq = $$props.optkq);
-		if ('vcrof' in $$props) $$invalidate(16, vcrof = $$props.vcrof);
-		if ('ikshv' in $$props) $$invalidate(17, ikshv = $$props.ikshv);
-		if ('t' in $$props) $$invalidate(18, t = $$props.t);
-		if ('ti' in $$props) $$invalidate(19, ti = $$props.ti);
-		if ('tit' in $$props) $$invalidate(20, tit = $$props.tit);
-		if ('titl' in $$props) $$invalidate(21, titl = $$props.titl);
-		if ('title' in $$props) $$invalidate(22, title = $$props.title);
-		if ('desc' in $$props) $$invalidate(23, desc = $$props.desc);
-		if ('descr' in $$props) $$invalidate(24, descr = $$props.descr);
-		if ('descri' in $$props) $$invalidate(25, descri = $$props.descri);
-		if ('descrip' in $$props) $$invalidate(26, descrip = $$props.descrip);
-		if ('descript' in $$props) $$invalidate(27, descript = $$props.descript);
-		if ('descripti' in $$props) $$invalidate(28, descripti = $$props.descripti);
-		if ('descriptio' in $$props) $$invalidate(29, descriptio = $$props.descriptio);
-		if ('description' in $$props) $$invalidate(30, description = $$props.description);
+		if ('kpvqf' in $$props) $$invalidate(13, kpvqf = $$props.kpvqf);
+		if ('optkq' in $$props) $$invalidate(14, optkq = $$props.optkq);
+		if ('vcrof' in $$props) $$invalidate(15, vcrof = $$props.vcrof);
+		if ('ikshv' in $$props) $$invalidate(16, ikshv = $$props.ikshv);
+		if ('t' in $$props) $$invalidate(17, t = $$props.t);
+		if ('ti' in $$props) $$invalidate(18, ti = $$props.ti);
+		if ('tit' in $$props) $$invalidate(19, tit = $$props.tit);
+		if ('titl' in $$props) $$invalidate(20, titl = $$props.titl);
+		if ('title' in $$props) $$invalidate(21, title = $$props.title);
+		if ('desc' in $$props) $$invalidate(22, desc = $$props.desc);
+		if ('descr' in $$props) $$invalidate(23, descr = $$props.descr);
+		if ('descri' in $$props) $$invalidate(24, descri = $$props.descri);
+		if ('descrip' in $$props) $$invalidate(25, descrip = $$props.descrip);
+		if ('descript' in $$props) $$invalidate(26, descript = $$props.descript);
+		if ('descripti' in $$props) $$invalidate(27, descripti = $$props.descripti);
+		if ('descriptio' in $$props) $$invalidate(28, descriptio = $$props.descriptio);
+		if ('description' in $$props) $$invalidate(29, description = $$props.description);
 		if ('heading' in $$props) $$invalidate(0, heading = $$props.heading);
 		if ('items' in $$props) $$invalidate(1, items = $$props.items);
 	};
@@ -3851,7 +3672,6 @@ function instance$4($$self, $$props, $$invalidate) {
 		fac,
 		favicon,
 		afaaz,
-		ooupd,
 		kpvqf,
 		optkq,
 		vcrof,
@@ -3872,15 +3692,15 @@ function instance$4($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$4 extends SvelteComponent {
+class Component$3 extends SvelteComponent {
 	constructor(options) {
 		super();
 
 		init(
 			this,
 			options,
-			instance$4,
-			create_fragment$4,
+			instance$3,
+			create_fragment$3,
 			safe_not_equal,
 			{
 				social_links: 2,
@@ -3894,24 +3714,23 @@ class Component$4 extends SvelteComponent {
 				fac: 10,
 				favicon: 11,
 				afaaz: 12,
-				ooupd: 13,
-				kpvqf: 14,
-				optkq: 15,
-				vcrof: 16,
-				ikshv: 17,
-				t: 18,
-				ti: 19,
-				tit: 20,
-				titl: 21,
-				title: 22,
-				desc: 23,
-				descr: 24,
-				descri: 25,
-				descrip: 26,
-				descript: 27,
-				descripti: 28,
-				descriptio: 29,
-				description: 30,
+				kpvqf: 13,
+				optkq: 14,
+				vcrof: 15,
+				ikshv: 16,
+				t: 17,
+				ti: 18,
+				tit: 19,
+				titl: 20,
+				title: 21,
+				desc: 22,
+				descr: 23,
+				descri: 24,
+				descrip: 25,
+				descript: 26,
+				descripti: 27,
+				descriptio: 28,
+				description: 29,
 				heading: 0,
 				items: 1
 			},
@@ -3925,22 +3744,22 @@ class Component$4 extends SvelteComponent {
 
 function get_each_context$2(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[31] = list[i].label;
-	child_ctx[32] = list[i].icon;
+	child_ctx[30] = list[i].label;
+	child_ctx[31] = list[i].icon;
 	return child_ctx;
 }
 
-// (70:4) {#each items as {label,icon}}
+// (69:4) {#each items as {label,icon}}
 function create_each_block$2(ctx) {
 	let li;
 	let icon;
 	let t0;
 	let span;
-	let t1_value = /*label*/ ctx[31] + "";
+	let t1_value = /*label*/ ctx[30] + "";
 	let t1;
 	let t2;
 	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[32] } });
+	icon = new Component$1({ props: { icon: /*icon*/ ctx[31] } });
 
 	return {
 		c() {
@@ -3979,9 +3798,9 @@ function create_each_block$2(ctx) {
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
-			if (dirty[0] & /*items*/ 4) icon_changes.icon = /*icon*/ ctx[32];
+			if (dirty[0] & /*items*/ 4) icon_changes.icon = /*icon*/ ctx[31];
 			icon.$set(icon_changes);
-			if ((!current || dirty[0] & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[31] + "")) set_data(t1, t1_value);
+			if ((!current || dirty[0] & /*items*/ 4) && t1_value !== (t1_value = /*label*/ ctx[30] + "")) set_data(t1, t1_value);
 		},
 		i(local) {
 			if (current) return;
@@ -3999,7 +3818,7 @@ function create_each_block$2(ctx) {
 	};
 }
 
-function create_fragment$5(ctx) {
+function create_fragment$4(ctx) {
 	let div2;
 	let div1;
 	let section;
@@ -4007,6 +3826,7 @@ function create_fragment$5(ctx) {
 	let t0;
 	let t1;
 	let div0;
+	let raw_value = /*description*/ ctx[0].html + "";
 	let t2;
 	let ul;
 	let current;
@@ -4085,7 +3905,7 @@ function create_fragment$5(ctx) {
 			append_hydration(h2, t0);
 			append_hydration(section, t1);
 			append_hydration(section, div0);
-			div0.innerHTML = /*description*/ ctx[0];
+			div0.innerHTML = raw_value;
 			append_hydration(section, t2);
 			append_hydration(section, ul);
 
@@ -4097,7 +3917,7 @@ function create_fragment$5(ctx) {
 		},
 		p(ctx, dirty) {
 			if (!current || dirty[0] & /*heading*/ 2) set_data(t0, /*heading*/ ctx[1]);
-			if (!current || dirty[0] & /*description*/ 1) div0.innerHTML = /*description*/ ctx[0];
+			if ((!current || dirty[0] & /*description*/ 1) && raw_value !== (raw_value = /*description*/ ctx[0].html + "")) div0.innerHTML = raw_value;
 			if (dirty[0] & /*items*/ 4) {
 				each_value = /*items*/ ctx[2];
 				let i;
@@ -4150,7 +3970,7 @@ function create_fragment$5(ctx) {
 	};
 }
 
-function instance$5($$self, $$props, $$invalidate) {
+function instance$4($$self, $$props, $$invalidate) {
 	let { social_links } = $$props;
 	let { site_nav } = $$props;
 	let { logo } = $$props;
@@ -4162,7 +3982,6 @@ function instance$5($$self, $$props, $$invalidate) {
 	let { fac } = $$props;
 	let { favicon } = $$props;
 	let { afaaz } = $$props;
-	let { ooupd } = $$props;
 	let { kpvqf } = $$props;
 	let { optkq } = $$props;
 	let { vcrof } = $$props;
@@ -4195,23 +4014,22 @@ function instance$5($$self, $$props, $$invalidate) {
 		if ('fac' in $$props) $$invalidate(11, fac = $$props.fac);
 		if ('favicon' in $$props) $$invalidate(12, favicon = $$props.favicon);
 		if ('afaaz' in $$props) $$invalidate(13, afaaz = $$props.afaaz);
-		if ('ooupd' in $$props) $$invalidate(14, ooupd = $$props.ooupd);
-		if ('kpvqf' in $$props) $$invalidate(15, kpvqf = $$props.kpvqf);
-		if ('optkq' in $$props) $$invalidate(16, optkq = $$props.optkq);
-		if ('vcrof' in $$props) $$invalidate(17, vcrof = $$props.vcrof);
-		if ('ikshv' in $$props) $$invalidate(18, ikshv = $$props.ikshv);
-		if ('t' in $$props) $$invalidate(19, t = $$props.t);
-		if ('ti' in $$props) $$invalidate(20, ti = $$props.ti);
-		if ('tit' in $$props) $$invalidate(21, tit = $$props.tit);
-		if ('titl' in $$props) $$invalidate(22, titl = $$props.titl);
-		if ('title' in $$props) $$invalidate(23, title = $$props.title);
-		if ('desc' in $$props) $$invalidate(24, desc = $$props.desc);
-		if ('descr' in $$props) $$invalidate(25, descr = $$props.descr);
-		if ('descri' in $$props) $$invalidate(26, descri = $$props.descri);
-		if ('descrip' in $$props) $$invalidate(27, descrip = $$props.descrip);
-		if ('descript' in $$props) $$invalidate(28, descript = $$props.descript);
-		if ('descripti' in $$props) $$invalidate(29, descripti = $$props.descripti);
-		if ('descriptio' in $$props) $$invalidate(30, descriptio = $$props.descriptio);
+		if ('kpvqf' in $$props) $$invalidate(14, kpvqf = $$props.kpvqf);
+		if ('optkq' in $$props) $$invalidate(15, optkq = $$props.optkq);
+		if ('vcrof' in $$props) $$invalidate(16, vcrof = $$props.vcrof);
+		if ('ikshv' in $$props) $$invalidate(17, ikshv = $$props.ikshv);
+		if ('t' in $$props) $$invalidate(18, t = $$props.t);
+		if ('ti' in $$props) $$invalidate(19, ti = $$props.ti);
+		if ('tit' in $$props) $$invalidate(20, tit = $$props.tit);
+		if ('titl' in $$props) $$invalidate(21, titl = $$props.titl);
+		if ('title' in $$props) $$invalidate(22, title = $$props.title);
+		if ('desc' in $$props) $$invalidate(23, desc = $$props.desc);
+		if ('descr' in $$props) $$invalidate(24, descr = $$props.descr);
+		if ('descri' in $$props) $$invalidate(25, descri = $$props.descri);
+		if ('descrip' in $$props) $$invalidate(26, descrip = $$props.descrip);
+		if ('descript' in $$props) $$invalidate(27, descript = $$props.descript);
+		if ('descripti' in $$props) $$invalidate(28, descripti = $$props.descripti);
+		if ('descriptio' in $$props) $$invalidate(29, descriptio = $$props.descriptio);
 		if ('description' in $$props) $$invalidate(0, description = $$props.description);
 		if ('heading' in $$props) $$invalidate(1, heading = $$props.heading);
 		if ('items' in $$props) $$invalidate(2, items = $$props.items);
@@ -4232,7 +4050,6 @@ function instance$5($$self, $$props, $$invalidate) {
 		fac,
 		favicon,
 		afaaz,
-		ooupd,
 		kpvqf,
 		optkq,
 		vcrof,
@@ -4252,15 +4069,15 @@ function instance$5($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$5 extends SvelteComponent {
+class Component$4 extends SvelteComponent {
 	constructor(options) {
 		super();
 
 		init(
 			this,
 			options,
-			instance$5,
-			create_fragment$5,
+			instance$4,
+			create_fragment$4,
 			safe_not_equal,
 			{
 				social_links: 3,
@@ -4274,23 +4091,22 @@ class Component$5 extends SvelteComponent {
 				fac: 11,
 				favicon: 12,
 				afaaz: 13,
-				ooupd: 14,
-				kpvqf: 15,
-				optkq: 16,
-				vcrof: 17,
-				ikshv: 18,
-				t: 19,
-				ti: 20,
-				tit: 21,
-				titl: 22,
-				title: 23,
-				desc: 24,
-				descr: 25,
-				descri: 26,
-				descrip: 27,
-				descript: 28,
-				descripti: 29,
-				descriptio: 30,
+				kpvqf: 14,
+				optkq: 15,
+				vcrof: 16,
+				ikshv: 17,
+				t: 18,
+				ti: 19,
+				tit: 20,
+				titl: 21,
+				title: 22,
+				desc: 23,
+				descr: 24,
+				descri: 25,
+				descrip: 26,
+				descript: 27,
+				descripti: 28,
+				descriptio: 29,
 				description: 0,
 				heading: 1,
 				items: 2
@@ -4305,12 +4121,12 @@ class Component$5 extends SvelteComponent {
 
 function get_each_context$3(ctx, list, i) {
 	const child_ctx = ctx.slice();
-	child_ctx[31] = list[i].link;
-	child_ctx[32] = list[i].icon;
+	child_ctx[30] = list[i].link;
+	child_ctx[31] = list[i].icon;
 	return child_ctx;
 }
 
-// (127:8) {#each social_links as {link, icon}}
+// (116:8) {#each social_links as {link, icon}}
 function create_each_block$3(ctx) {
 	let li;
 	let a;
@@ -4319,7 +4135,7 @@ function create_each_block$3(ctx) {
 	let a_aria_label_value;
 	let t_1;
 	let current;
-	icon = new Component$1({ props: { icon: /*icon*/ ctx[32] } });
+	icon = new Component$1({ props: { icon: /*icon*/ ctx[31] } });
 
 	return {
 		c() {
@@ -4347,9 +4163,9 @@ function create_each_block$3(ctx) {
 			this.h();
 		},
 		h() {
-			attr(a, "href", a_href_value = /*link*/ ctx[31].url);
-			attr(a, "aria-label", a_aria_label_value = /*icon*/ ctx[32]);
-			attr(a, "class", "svelte-i8f0ga");
+			attr(a, "href", a_href_value = /*link*/ ctx[30].url);
+			attr(a, "aria-label", a_aria_label_value = /*icon*/ ctx[31]);
+			attr(a, "class", "svelte-7lhx2x");
 		},
 		m(target, anchor) {
 			insert_hydration(target, li, anchor);
@@ -4360,14 +4176,14 @@ function create_each_block$3(ctx) {
 		},
 		p(ctx, dirty) {
 			const icon_changes = {};
-			if (dirty[0] & /*social_links*/ 1) icon_changes.icon = /*icon*/ ctx[32];
+			if (dirty[0] & /*social_links*/ 1) icon_changes.icon = /*icon*/ ctx[31];
 			icon.$set(icon_changes);
 
-			if (!current || dirty[0] & /*social_links*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[31].url)) {
+			if (!current || dirty[0] & /*social_links*/ 1 && a_href_value !== (a_href_value = /*link*/ ctx[30].url)) {
 				attr(a, "href", a_href_value);
 			}
 
-			if (!current || dirty[0] & /*social_links*/ 1 && a_aria_label_value !== (a_aria_label_value = /*icon*/ ctx[32])) {
+			if (!current || dirty[0] & /*social_links*/ 1 && a_aria_label_value !== (a_aria_label_value = /*icon*/ ctx[31])) {
 				attr(a, "aria-label", a_aria_label_value);
 			}
 		},
@@ -4387,7 +4203,7 @@ function create_each_block$3(ctx) {
 	};
 }
 
-function create_fragment$6(ctx) {
+function create_fragment$5(ctx) {
 	let div4;
 	let div3;
 	let footer;
@@ -4396,12 +4212,12 @@ function create_fragment$6(ctx) {
 	let h2;
 	let t0;
 	let t1;
-	let a0;
+	let a;
 	let icon;
 	let t2;
 	let span0;
 	let t3;
-	let a0_href_value;
+	let a_href_value;
 	let t4;
 	let hr;
 	let t5;
@@ -4411,11 +4227,6 @@ function create_fragment$6(ctx) {
 	let t7_value = new Date().getFullYear() + "";
 	let t7;
 	let t8;
-	let span2;
-	let a1;
-	let t9;
-	let t10;
-	let t11;
 	let ul;
 	let current;
 	icon = new Component$1({ props: { icon: "mdi:envelope" } });
@@ -4440,7 +4251,7 @@ function create_fragment$6(ctx) {
 			h2 = element("h2");
 			t0 = text(/*heading*/ ctx[1]);
 			t1 = space();
-			a0 = element("a");
+			a = element("a");
 			create_component(icon.$$.fragment);
 			t2 = space();
 			span0 = element("span");
@@ -4453,11 +4264,6 @@ function create_fragment$6(ctx) {
 			t6 = text("Copyright ");
 			t7 = text(t7_value);
 			t8 = space();
-			span2 = element("span");
-			a1 = element("a");
-			t9 = text("Primo");
-			t10 = text(" Powered");
-			t11 = space();
 			ul = element("ul");
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -4482,15 +4288,15 @@ function create_fragment$6(ctx) {
 			t0 = claim_text(h2_nodes, /*heading*/ ctx[1]);
 			h2_nodes.forEach(detach);
 			t1 = claim_space(div0_nodes);
-			a0 = claim_element(div0_nodes, "A", { class: true, href: true });
-			var a0_nodes = children(a0);
-			claim_component(icon.$$.fragment, a0_nodes);
-			t2 = claim_space(a0_nodes);
-			span0 = claim_element(a0_nodes, "SPAN", { class: true });
+			a = claim_element(div0_nodes, "A", { class: true, href: true });
+			var a_nodes = children(a);
+			claim_component(icon.$$.fragment, a_nodes);
+			t2 = claim_space(a_nodes);
+			span0 = claim_element(a_nodes, "SPAN", { class: true });
 			var span0_nodes = children(span0);
 			t3 = claim_text(span0_nodes, /*email*/ ctx[2]);
 			span0_nodes.forEach(detach);
-			a0_nodes.forEach(detach);
+			a_nodes.forEach(detach);
 			div0_nodes.forEach(detach);
 			t4 = claim_space(div2_nodes);
 			hr = claim_element(div2_nodes, "HR", {});
@@ -4503,15 +4309,6 @@ function create_fragment$6(ctx) {
 			t7 = claim_text(span1_nodes, t7_value);
 			span1_nodes.forEach(detach);
 			t8 = claim_space(div1_nodes);
-			span2 = claim_element(div1_nodes, "SPAN", { class: true });
-			var span2_nodes = children(span2);
-			a1 = claim_element(span2_nodes, "A", { href: true, class: true });
-			var a1_nodes = children(a1);
-			t9 = claim_text(a1_nodes, "Primo");
-			a1_nodes.forEach(detach);
-			t10 = claim_text(span2_nodes, " Powered");
-			span2_nodes.forEach(detach);
-			t11 = claim_space(div1_nodes);
 			ul = claim_element(div1_nodes, "UL", { class: true });
 			var ul_nodes = children(ul);
 
@@ -4529,17 +4326,14 @@ function create_fragment$6(ctx) {
 		},
 		h() {
 			attr(h2, "class", "heading");
-			attr(span0, "class", "svelte-i8f0ga");
-			attr(a0, "class", "email svelte-i8f0ga");
-			attr(a0, "href", a0_href_value = "mailto:" + /*email*/ ctx[2]);
-			attr(div0, "class", "primary svelte-i8f0ga");
-			attr(span1, "class", "copyright svelte-i8f0ga");
-			attr(a1, "href", "https://primo.so");
-			attr(a1, "class", "svelte-i8f0ga");
-			attr(span2, "class", "primo svelte-i8f0ga");
-			attr(ul, "class", "svelte-i8f0ga");
-			attr(div1, "class", "secondary svelte-i8f0ga");
-			attr(div2, "class", "section-container svelte-i8f0ga");
+			attr(span0, "class", "svelte-7lhx2x");
+			attr(a, "class", "email svelte-7lhx2x");
+			attr(a, "href", a_href_value = "mailto:" + /*email*/ ctx[2]);
+			attr(div0, "class", "primary svelte-7lhx2x");
+			attr(span1, "class", "copyright svelte-7lhx2x");
+			attr(ul, "class", "svelte-7lhx2x");
+			attr(div1, "class", "secondary svelte-7lhx2x");
+			attr(div2, "class", "section-container svelte-7lhx2x");
 			attr(div3, "class", "component");
 			attr(div4, "class", "section has-component");
 			attr(div4, "id", "optkq");
@@ -4553,10 +4347,10 @@ function create_fragment$6(ctx) {
 			append_hydration(div0, h2);
 			append_hydration(h2, t0);
 			append_hydration(div0, t1);
-			append_hydration(div0, a0);
-			mount_component(icon, a0, null);
-			append_hydration(a0, t2);
-			append_hydration(a0, span0);
+			append_hydration(div0, a);
+			mount_component(icon, a, null);
+			append_hydration(a, t2);
+			append_hydration(a, span0);
 			append_hydration(span0, t3);
 			append_hydration(div2, t4);
 			append_hydration(div2, hr);
@@ -4566,11 +4360,6 @@ function create_fragment$6(ctx) {
 			append_hydration(span1, t6);
 			append_hydration(span1, t7);
 			append_hydration(div1, t8);
-			append_hydration(div1, span2);
-			append_hydration(span2, a1);
-			append_hydration(a1, t9);
-			append_hydration(span2, t10);
-			append_hydration(div1, t11);
 			append_hydration(div1, ul);
 
 			for (let i = 0; i < each_blocks.length; i += 1) {
@@ -4583,8 +4372,8 @@ function create_fragment$6(ctx) {
 			if (!current || dirty[0] & /*heading*/ 2) set_data(t0, /*heading*/ ctx[1]);
 			if (!current || dirty[0] & /*email*/ 4) set_data(t3, /*email*/ ctx[2]);
 
-			if (!current || dirty[0] & /*email*/ 4 && a0_href_value !== (a0_href_value = "mailto:" + /*email*/ ctx[2])) {
-				attr(a0, "href", a0_href_value);
+			if (!current || dirty[0] & /*email*/ 4 && a_href_value !== (a_href_value = "mailto:" + /*email*/ ctx[2])) {
+				attr(a, "href", a_href_value);
 			}
 
 			if (dirty[0] & /*social_links*/ 1) {
@@ -4642,7 +4431,7 @@ function create_fragment$6(ctx) {
 	};
 }
 
-function instance$6($$self, $$props, $$invalidate) {
+function instance$5($$self, $$props, $$invalidate) {
 	let { social_links } = $$props;
 	let { site_nav } = $$props;
 	let { logo } = $$props;
@@ -4654,7 +4443,6 @@ function instance$6($$self, $$props, $$invalidate) {
 	let { fac } = $$props;
 	let { favicon } = $$props;
 	let { afaaz } = $$props;
-	let { ooupd } = $$props;
 	let { kpvqf } = $$props;
 	let { optkq } = $$props;
 	let { vcrof } = $$props;
@@ -4687,24 +4475,23 @@ function instance$6($$self, $$props, $$invalidate) {
 		if ('fac' in $$props) $$invalidate(10, fac = $$props.fac);
 		if ('favicon' in $$props) $$invalidate(11, favicon = $$props.favicon);
 		if ('afaaz' in $$props) $$invalidate(12, afaaz = $$props.afaaz);
-		if ('ooupd' in $$props) $$invalidate(13, ooupd = $$props.ooupd);
-		if ('kpvqf' in $$props) $$invalidate(14, kpvqf = $$props.kpvqf);
-		if ('optkq' in $$props) $$invalidate(15, optkq = $$props.optkq);
-		if ('vcrof' in $$props) $$invalidate(16, vcrof = $$props.vcrof);
-		if ('ikshv' in $$props) $$invalidate(17, ikshv = $$props.ikshv);
-		if ('t' in $$props) $$invalidate(18, t = $$props.t);
-		if ('ti' in $$props) $$invalidate(19, ti = $$props.ti);
-		if ('tit' in $$props) $$invalidate(20, tit = $$props.tit);
-		if ('titl' in $$props) $$invalidate(21, titl = $$props.titl);
-		if ('title' in $$props) $$invalidate(22, title = $$props.title);
-		if ('desc' in $$props) $$invalidate(23, desc = $$props.desc);
-		if ('descr' in $$props) $$invalidate(24, descr = $$props.descr);
-		if ('descri' in $$props) $$invalidate(25, descri = $$props.descri);
-		if ('descrip' in $$props) $$invalidate(26, descrip = $$props.descrip);
-		if ('descript' in $$props) $$invalidate(27, descript = $$props.descript);
-		if ('descripti' in $$props) $$invalidate(28, descripti = $$props.descripti);
-		if ('descriptio' in $$props) $$invalidate(29, descriptio = $$props.descriptio);
-		if ('description' in $$props) $$invalidate(30, description = $$props.description);
+		if ('kpvqf' in $$props) $$invalidate(13, kpvqf = $$props.kpvqf);
+		if ('optkq' in $$props) $$invalidate(14, optkq = $$props.optkq);
+		if ('vcrof' in $$props) $$invalidate(15, vcrof = $$props.vcrof);
+		if ('ikshv' in $$props) $$invalidate(16, ikshv = $$props.ikshv);
+		if ('t' in $$props) $$invalidate(17, t = $$props.t);
+		if ('ti' in $$props) $$invalidate(18, ti = $$props.ti);
+		if ('tit' in $$props) $$invalidate(19, tit = $$props.tit);
+		if ('titl' in $$props) $$invalidate(20, titl = $$props.titl);
+		if ('title' in $$props) $$invalidate(21, title = $$props.title);
+		if ('desc' in $$props) $$invalidate(22, desc = $$props.desc);
+		if ('descr' in $$props) $$invalidate(23, descr = $$props.descr);
+		if ('descri' in $$props) $$invalidate(24, descri = $$props.descri);
+		if ('descrip' in $$props) $$invalidate(25, descrip = $$props.descrip);
+		if ('descript' in $$props) $$invalidate(26, descript = $$props.descript);
+		if ('descripti' in $$props) $$invalidate(27, descripti = $$props.descripti);
+		if ('descriptio' in $$props) $$invalidate(28, descriptio = $$props.descriptio);
+		if ('description' in $$props) $$invalidate(29, description = $$props.description);
 		if ('heading' in $$props) $$invalidate(1, heading = $$props.heading);
 		if ('email' in $$props) $$invalidate(2, email = $$props.email);
 	};
@@ -4723,7 +4510,6 @@ function instance$6($$self, $$props, $$invalidate) {
 		fac,
 		favicon,
 		afaaz,
-		ooupd,
 		kpvqf,
 		optkq,
 		vcrof,
@@ -4744,15 +4530,15 @@ function instance$6($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$6 extends SvelteComponent {
+class Component$5 extends SvelteComponent {
 	constructor(options) {
 		super();
 
 		init(
 			this,
 			options,
-			instance$6,
-			create_fragment$6,
+			instance$5,
+			create_fragment$5,
 			safe_not_equal,
 			{
 				social_links: 0,
@@ -4766,24 +4552,23 @@ class Component$6 extends SvelteComponent {
 				fac: 10,
 				favicon: 11,
 				afaaz: 12,
-				ooupd: 13,
-				kpvqf: 14,
-				optkq: 15,
-				vcrof: 16,
-				ikshv: 17,
-				t: 18,
-				ti: 19,
-				tit: 20,
-				titl: 21,
-				title: 22,
-				desc: 23,
-				descr: 24,
-				descri: 25,
-				descrip: 26,
-				descript: 27,
-				descripti: 28,
-				descriptio: 29,
-				description: 30,
+				kpvqf: 13,
+				optkq: 14,
+				vcrof: 15,
+				ikshv: 16,
+				t: 17,
+				ti: 18,
+				tit: 19,
+				titl: 20,
+				title: 21,
+				desc: 22,
+				descr: 23,
+				descri: 24,
+				descrip: 25,
+				descript: 26,
+				descripti: 27,
+				descriptio: 28,
+				description: 29,
 				heading: 1,
 				email: 2
 			},
@@ -4795,7 +4580,7 @@ class Component$6 extends SvelteComponent {
 
 /* generated by Svelte v3.55.1 */
 
-function create_fragment$7(ctx) {
+function create_fragment$6(ctx) {
 	let link0;
 	let t0;
 	let link1;
@@ -4847,7 +4632,7 @@ function create_fragment$7(ctx) {
 	};
 }
 
-function instance$7($$self, $$props, $$invalidate) {
+function instance$6($$self, $$props, $$invalidate) {
 	let { social_links } = $$props;
 	let { site_nav } = $$props;
 	let { logo } = $$props;
@@ -4928,11 +4713,11 @@ function instance$7($$self, $$props, $$invalidate) {
 	];
 }
 
-class Component$7 extends SvelteComponent {
+class Component$6 extends SvelteComponent {
 	constructor(options) {
 		super();
 
-		init(this, options, instance$7, create_fragment$7, safe_not_equal, {
+		init(this, options, instance$6, create_fragment$6, safe_not_equal, {
 			social_links: 0,
 			site_nav: 1,
 			logo: 2,
@@ -4963,7 +4748,7 @@ class Component$7 extends SvelteComponent {
 
 /* generated by Svelte v3.55.1 */
 
-function create_fragment$8(ctx) {
+function create_fragment$7(ctx) {
 	let component_0;
 	let t0;
 	let component_1;
@@ -4975,8 +4760,6 @@ function create_fragment$8(ctx) {
 	let component_4;
 	let t4;
 	let component_5;
-	let t5;
-	let component_6;
 	let current;
 
 	component_0 = new Component({
@@ -5180,7 +4963,6 @@ function create_fragment$8(ctx) {
 					"": "",
 					"name": "Robin de Laater"
 				},
-				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
 				kpvqf: {
 					"heading": "Skills",
 					"items": [
@@ -5196,14 +4978,22 @@ function create_fragment$8(ctx) {
 						{
 							"label": "CSS",
 							"icon": "mdi:language-css3"
-						}
+						},
+						{
+							"label": "PHP",
+							"icon": "mdi:language-php"
+						},
+						{ "label": "ReactJS", "icon": "mdi:react" }
 					],
-					"description": "<p>Some technologies i’ve been using lately:</p>",
+					"description": {
+						"markdown": "Some technologies i’ve been working with lately:\n\n",
+						"html": "<p>Some technologies i’ve been working with lately:</p>"
+					},
 					"": ""
 				},
 				optkq: {
 					"heading": "Get in touch",
-					"email": "someone@somewhere.com",
+					"email": "robin@delaater.nl",
 					"": ""
 				},
 				vcrof: {
@@ -5369,117 +5159,6 @@ function create_fragment$8(ctx) {
 					"alt": "",
 					"size": null
 				},
-				ikshv: {
-					"logo": {
-						"title": "Jamal",
-						"image": {
-							"url": "https://picsum.photos/600/400?blur=10",
-							"src": "https://picsum.photos/600/400?blur=10",
-							"alt": "",
-							"size": null
-						}
-					},
-					"nav": [
-						{ "link": { "label": "Blog", "url": "/" } },
-						{
-							"link": { "label": "Speaking Events", "url": "/" }
-						}
-					],
-					"cta": [
-						{
-							"link": { "label": "Contact Me", "url": "/" }
-						}
-					]
-				},
-				t: "Veniam velit amet",
-				ti: "Veniam velit amet",
-				tit: "Veniam velit amet",
-				titl: "Veniam velit amet",
-				title: "Portfolio Template",
-				desc: "Elit anim tempor",
-				descr: "Elit anim tempor",
-				descri: "Elit anim tempor",
-				descrip: "Elit anim tempor",
-				descript: "Elit anim tempor",
-				descripti: "Elit anim tempor",
-				descriptio: "Elit anim tempor",
-				description: "Cupidatat est tempor"
-			}
-		});
-
-	component_3 = new Component$4({
-			props: {
-				social_links: [
-					{
-						"link": {
-							"label": "Twitter",
-							"url": "https://twitter.com/robindelaater"
-						},
-						"icon": "mdi:twitter"
-					},
-					{
-						"link": {
-							"label": "Github",
-							"url": "https://github.com/robindelaater"
-						},
-						"icon": "mdi:github"
-					},
-					{
-						"link": {
-							"label": "Email",
-							"url": "mailto:robin@delaater.nl"
-						},
-						"icon": "mdi:envelope"
-					}
-				],
-				site_nav: [
-					{
-						"link": {
-							"label": "Home",
-							"url": "/",
-							"active": false
-						}
-					},
-					{
-						"link": { "label": "Projects", "url": "/projects" }
-					}
-				],
-				logo: {
-					"title": "Jane Doe",
-					"image": {
-						"alt": "",
-						"url": "",
-						"src": "",
-						"size": null
-					}
-				},
-				name: "Ross Grey",
-				theme: "dark",
-				variation: "dark",
-				f: {
-					"url": "https://picsum.photos/600/400?blur=10",
-					"src": "https://picsum.photos/600/400?blur=10",
-					"alt": "",
-					"size": null
-				},
-				faci: {
-					"url": "https://picsum.photos/600/400?blur=10",
-					"src": "https://picsum.photos/600/400?blur=10",
-					"alt": "",
-					"size": null
-				},
-				fac: {
-					"url": "https://picsum.photos/600/400?blur=10",
-					"src": "https://picsum.photos/600/400?blur=10",
-					"alt": "",
-					"size": null
-				},
-				favicon: {
-					"url": "data:image/png;base64,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",
-					"src": "data:image/png;base64,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",
-					"alt": "",
-					"size": null
-				},
 				afaaz: {
 					"portrait": {
 						"image": {
@@ -5497,7 +5176,6 @@ function create_fragment$8(ctx) {
 					"": "",
 					"name": "Robin de Laater"
 				},
-				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
 				kpvqf: {
 					"heading": "Skills",
 					"items": [
@@ -5513,14 +5191,22 @@ function create_fragment$8(ctx) {
 						{
 							"label": "CSS",
 							"icon": "mdi:language-css3"
-						}
+						},
+						{
+							"label": "PHP",
+							"icon": "mdi:language-php"
+						},
+						{ "label": "ReactJS", "icon": "mdi:react" }
 					],
-					"description": "<p>Some technologies i’ve been using lately:</p>",
+					"description": {
+						"markdown": "Some technologies i’ve been working with lately:\n\n",
+						"html": "<p>Some technologies i’ve been working with lately:</p>"
+					},
 					"": ""
 				},
 				optkq: {
 					"heading": "Get in touch",
-					"email": "someone@somewhere.com",
+					"email": "robin@delaater.nl",
 					"": ""
 				},
 				vcrof: {
@@ -5639,6 +5325,231 @@ function create_fragment$8(ctx) {
 			}
 		});
 
+	component_3 = new Component$4({
+			props: {
+				social_links: [
+					{
+						"link": {
+							"label": "Twitter",
+							"url": "https://twitter.com/robindelaater"
+						},
+						"icon": "mdi:twitter"
+					},
+					{
+						"link": {
+							"label": "Github",
+							"url": "https://github.com/robindelaater"
+						},
+						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
+					}
+				],
+				site_nav: [
+					{
+						"link": {
+							"label": "Home",
+							"url": "/",
+							"active": false
+						}
+					},
+					{
+						"link": { "label": "Projects", "url": "/projects" }
+					}
+				],
+				logo: {
+					"title": "Jane Doe",
+					"image": {
+						"alt": "",
+						"url": "",
+						"src": "",
+						"size": null
+					}
+				},
+				name: "Ross Grey",
+				theme: "dark",
+				variation: "dark",
+				f: {
+					"url": "https://picsum.photos/600/400?blur=10",
+					"src": "https://picsum.photos/600/400?blur=10",
+					"alt": "",
+					"size": null
+				},
+				faci: {
+					"url": "https://picsum.photos/600/400?blur=10",
+					"src": "https://picsum.photos/600/400?blur=10",
+					"alt": "",
+					"size": null
+				},
+				fac: {
+					"url": "https://picsum.photos/600/400?blur=10",
+					"src": "https://picsum.photos/600/400?blur=10",
+					"alt": "",
+					"size": null
+				},
+				favicon: {
+					"url": "data:image/png;base64,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",
+					"src": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAGP0lEQVR42q1XA7AkyxKdNedNT49xd69t32+bzzbXtm3btm3btr3Bb1zlz5PRPVF/FhfxJiJnprOr8pxEZVVZXvKpwVLHfGjcuLHbbre/r2naTP49wvKQpdSQh9Dpuo5372OsYqe22KriB5Pkw0aTWWaz4b/xL5nCz6RK2DuMneVwOJLCbFb8Ubyuwd6OgHEFsNgQeF2mECiDznyvzmEbI9lWTcV2xeA2my2KJ19UgP/LUs5ClZRyzFGIXGQikRWRkBc8OJ3l78bE/5ieVlPKYMOw9XcmkfEiErVNzxVw8eBbEpVEZHhNmBVakwdcUDynCkUzRK8Uif+a6QCWii3hQLGEg4thp/58YAfr/S6y+1gwTwsHDJurRALF/X9RwHIJFY/O8oomhgWgnpX0gJsEwMZ6r5P02ID8t1ksInaXg0Tndoheii/oJq1OY9IjPGT3OEWv1hOWt0VZ67NZSJaQVSOZbKkvxvVIXwhEiLDRRvyMcd4/5pPntzk8tgZ0GAOCErlXMDfGL79wCHr8mqlgmSXgbrfbw8q/Shgb28r0SC/AWSyUurYrZZ8cTsEWvwIJ1jXgMRolzGhGWUeGUO75MZRzbjRlHhxEsWM+xRh4K6DRA96V90kL25AVerc4ABKIsjQr6ZhonTryabWV6E29Ic/TNvegvBuTKO/OFIqf/g01ZJ0zL44y9vSngrvTqODOVPwq/6dS6oZuEplGIL+xOxU+nEH5tyZT8rIO1BgkfJw+vwskioEJbIvG/Vu3MaMmnuJw8JzL4yh1W09y5sbCACIigHnXJlLW4SGUMLMZJc5tSdknhouu4N40SpzTkhrwWO/rRRK9fLaTf2sKJS9tDxuIEKRY5zoAtsVu403Ej5zXKVHBc6+Op7QdvcmR2lQmBj75CeVdmUD5NydTxs6+ZK8ptSCRcX03CYTE25yzo8n9i0x5532tkHJOjZQ5BbeZxJJ2SAdqpFQHEd7ALFw4D3W3AzkvS13XlcTIhdHiuSMtUoBAIHbUJ5TPRuBpsNkvRefIimaJEY+j+r8jc/OvT6Kmnf8sdQABiayjQynv6gRJVeL81tCXcbqxsh5a7AFXKTx3/zyDci+NY/AxlH1+FAVb/1a8cH43UbyMn/q15Dn3wljyvloQKjg9LiD/I5r/GuSERFS/t2Wu6wfJVJd/uUA5CiA3kXJOjyS7pZHZZ0otEo4mHmEbO/4zzvtYyjgxjFL39Sfvhz9EZMTb+ClfmQTEK1mi8UGscwGJn/YNwiyeRrT4NdmMeZG93qS8y+NBTuohqu9bgoXVxr2hFKvgoVSk11mGCTFjPqF0JpByaCAlchq8H/yA6rMeK8Ek4OMCsxoh1iw1xWPo4T2WJ8LbUMDfACGkBcJL8x1EBuBlRgQeIgJHdDy49BKwsmLi8A8oeX8/it/Wg2LXdiItJUhx4z+XFZB7cSx5fp9HjsxoSl3fjQElv6Fqj+z9phCO7P4aFy17zmFH6AEOUnpihHhuNL4j2ANmcASgLOaCBDvxLGLAWxS7qQtFr+lA/smfUsKiNhJihNOZH0+RPV6noqezzT4g9RMz9APMldCnbepBRU9mSeijB74r4I6kJqGDjbEnzJRGZLApsWsa2il6guTQ3+1PFLmiLXmnfUaJ23tSARcSgLx/yCM9ykcpKzpS+rbelDCrBRdmoQDrCUGZG/j0J5S+tZfkvJFRLwBXCQA71IpDBwjN2MWwH2AZdfgdOSd+RAkbuwoBswjhqdUQANiM3o9+j9VhM/RWYz/hCCuHFKUVh29GLGSSwG6oc5FZ38qnhC3dqYBznMvd0ffmdwTAwflEJLAUsRpCW7JNNjTskEip6nnYZqScfJWzHMRcp2JEltPg9yTf2ceGkSM9SjYmIWnVIM8/M1htqueq92SemNUDyQj1QKIePBBSDYXZ8jdmE0J0DJJVP5rh8KMeSGqwyO8Lj2QA8TmRTxM8zLPqH8lefCgNjwTrUGTomgCv5qH0b8BQMSs+lqs1UXUpV0/EsF3R3aCuEgmkwzRSXMX7QZkxp9ywcQE2q3Q7Qp5QLGFXsxLDcEn41Ux9p85BcatXsypfTrFcjMvpX6twOf2r0VuSq345ff713OyY72PveM71/BF0xtX9fYwNi+gLr+f/A6i9qhE6OU++AAAAAElFTkSuQmCC",
+					"alt": "",
+					"size": null
+				},
+				afaaz: {
+					"portrait": {
+						"image": {
+							"alt": "Profile photo of me",
+							"url": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"size": 77
+						},
+						"variation": "circle"
+					},
+					"description": {
+						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
+						"html": "<p>I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁</p>"
+					},
+					"": "",
+					"name": "Robin de Laater"
+				},
+				kpvqf: {
+					"heading": "Skills",
+					"items": [
+						{
+							"label": "JavaScript",
+							"icon": "akar-icons:javascript-fill"
+						},
+						{ "label": "Svelte", "icon": "cib:svelte" },
+						{
+							"label": "HTML",
+							"icon": "fontisto:html5"
+						},
+						{
+							"label": "CSS",
+							"icon": "mdi:language-css3"
+						},
+						{
+							"label": "PHP",
+							"icon": "mdi:language-php"
+						},
+						{ "label": "ReactJS", "icon": "mdi:react" }
+					],
+					"description": {
+						"markdown": "Some technologies i’ve been working with lately:\n\n",
+						"html": "<p>Some technologies i’ve been working with lately:</p>"
+					},
+					"": ""
+				},
+				optkq: {
+					"heading": "Get in touch",
+					"email": "robin@delaater.nl",
+					"": ""
+				},
+				vcrof: {
+					"heading": "Featured Projects",
+					"items": [
+						{
+							"date": "01.01.22",
+							"title": "First project",
+							"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra senectus ipsum a non. Malesuada magna etiam great dignissim curabitur aliquam.</p>",
+							"thumbnail": {
+								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"src": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"alt": "Mountain",
+								"size": null
+							},
+							"links": [
+								{
+									"link": { "label": "Visit Site", "url": "/" }
+								}
+							]
+						},
+						{
+							"date": "01.01.22",
+							"title": "Second project",
+							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
+							"thumbnail": {
+								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"alt": "Mountains by the sea",
+								"size": null
+							},
+							"links": [
+								{
+									"link": {
+										"label": "Visit Site",
+										"url": "/second-project"
+									}
+								}
+							]
+						}
+					]
+				},
+				ikshv: {
+					"logo": {
+						"title": "Jamal",
+						"image": {
+							"url": "https://picsum.photos/600/400?blur=10",
+							"src": "https://picsum.photos/600/400?blur=10",
+							"alt": "",
+							"size": null
+						}
+					},
+					"nav": [
+						{ "link": { "label": "Blog", "url": "/" } },
+						{
+							"link": { "label": "Speaking Events", "url": "/" }
+						}
+					],
+					"cta": [
+						{
+							"link": { "label": "Contact Me", "url": "/" }
+						}
+					]
+				},
+				t: "Veniam velit amet",
+				ti: "Veniam velit amet",
+				tit: "Veniam velit amet",
+				titl: "Veniam velit amet",
+				title: "Portfolio Template",
+				desc: "Elit anim tempor",
+				descr: "Elit anim tempor",
+				descri: "Elit anim tempor",
+				descrip: "Elit anim tempor",
+				descript: "Elit anim tempor",
+				descripti: "Elit anim tempor",
+				descriptio: "Elit anim tempor",
+				description: {
+					"markdown": "Some technologies i’ve been working with lately:\n\n",
+					"html": "<p>Some technologies i’ve been working with lately:</p>"
+				},
+				heading: "Skills",
+				items: [
+					{
+						"label": "JavaScript",
+						"icon": "akar-icons:javascript-fill"
+					},
+					{ "label": "Svelte", "icon": "cib:svelte" },
+					{
+						"label": "HTML",
+						"icon": "fontisto:html5"
+					},
+					{
+						"label": "CSS",
+						"icon": "mdi:language-css3"
+					},
+					{
+						"label": "PHP",
+						"icon": "mdi:language-php"
+					},
+					{ "label": "ReactJS", "icon": "mdi:react" }
+				]
+			}
+		});
+
 	component_4 = new Component$5({
 			props: {
 				social_links: [
@@ -5729,7 +5640,6 @@ function create_fragment$8(ctx) {
 					"": "",
 					"name": "Robin de Laater"
 				},
-				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
 				kpvqf: {
 					"heading": "Skills",
 					"items": [
@@ -5745,224 +5655,22 @@ function create_fragment$8(ctx) {
 						{
 							"label": "CSS",
 							"icon": "mdi:language-css3"
-						}
+						},
+						{
+							"label": "PHP",
+							"icon": "mdi:language-php"
+						},
+						{ "label": "ReactJS", "icon": "mdi:react" }
 					],
-					"description": "<p>Some technologies i’ve been using lately:</p>",
-					"": ""
-				},
-				optkq: {
-					"heading": "Get in touch",
-					"email": "someone@somewhere.com",
-					"": ""
-				},
-				vcrof: {
-					"heading": "Featured Projects",
-					"items": [
-						{
-							"date": "01.01.22",
-							"title": "First project",
-							"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra senectus ipsum a non. Malesuada magna etiam great dignissim curabitur aliquam.</p>",
-							"thumbnail": {
-								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"src": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"alt": "Mountain",
-								"size": null
-							},
-							"links": [
-								{
-									"link": { "label": "Visit Site", "url": "/" }
-								}
-							]
-						},
-						{
-							"date": "01.01.22",
-							"title": "Second project",
-							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
-							"thumbnail": {
-								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
-								"alt": "Mountains by the sea",
-								"size": null
-							},
-							"links": [
-								{
-									"link": {
-										"label": "Visit Site",
-										"url": "/second-project"
-									}
-								}
-							]
-						}
-					]
-				},
-				ikshv: {
-					"logo": {
-						"title": "Jamal",
-						"image": {
-							"url": "https://picsum.photos/600/400?blur=10",
-							"src": "https://picsum.photos/600/400?blur=10",
-							"alt": "",
-							"size": null
-						}
-					},
-					"nav": [
-						{ "link": { "label": "Blog", "url": "/" } },
-						{
-							"link": { "label": "Speaking Events", "url": "/" }
-						}
-					],
-					"cta": [
-						{
-							"link": { "label": "Contact Me", "url": "/" }
-						}
-					]
-				},
-				t: "Veniam velit amet",
-				ti: "Veniam velit amet",
-				tit: "Veniam velit amet",
-				titl: "Veniam velit amet",
-				title: "Portfolio Template",
-				desc: "Elit anim tempor",
-				descr: "Elit anim tempor",
-				descri: "Elit anim tempor",
-				descrip: "Elit anim tempor",
-				descript: "Elit anim tempor",
-				descripti: "Elit anim tempor",
-				descriptio: "Elit anim tempor",
-				description: "<p>Some technologies i’ve been using lately:</p>",
-				heading: "Skills",
-				items: [
-					{
-						"label": "JavaScript",
-						"icon": "akar-icons:javascript-fill"
-					},
-					{ "label": "Svelte", "icon": "cib:svelte" },
-					{
-						"label": "HTML",
-						"icon": "fontisto:html5"
-					},
-					{
-						"label": "CSS",
-						"icon": "mdi:language-css3"
-					}
-				]
-			}
-		});
-
-	component_5 = new Component$6({
-			props: {
-				social_links: [
-					{
-						"link": {
-							"label": "Twitter",
-							"url": "https://twitter.com/robindelaater"
-						},
-						"icon": "mdi:twitter"
-					},
-					{
-						"link": {
-							"label": "Github",
-							"url": "https://github.com/robindelaater"
-						},
-						"icon": "mdi:github"
-					},
-					{
-						"link": {
-							"label": "Email",
-							"url": "mailto:robin@delaater.nl"
-						},
-						"icon": "mdi:envelope"
-					}
-				],
-				site_nav: [
-					{
-						"link": {
-							"label": "Home",
-							"url": "/",
-							"active": false
-						}
-					},
-					{
-						"link": { "label": "Projects", "url": "/projects" }
-					}
-				],
-				logo: {
-					"title": "Jane Doe",
-					"image": {
-						"alt": "",
-						"url": "",
-						"src": "",
-						"size": null
-					}
-				},
-				name: "Ross Grey",
-				theme: "dark",
-				variation: "dark",
-				f: {
-					"url": "https://picsum.photos/600/400?blur=10",
-					"src": "https://picsum.photos/600/400?blur=10",
-					"alt": "",
-					"size": null
-				},
-				faci: {
-					"url": "https://picsum.photos/600/400?blur=10",
-					"src": "https://picsum.photos/600/400?blur=10",
-					"alt": "",
-					"size": null
-				},
-				fac: {
-					"url": "https://picsum.photos/600/400?blur=10",
-					"src": "https://picsum.photos/600/400?blur=10",
-					"alt": "",
-					"size": null
-				},
-				favicon: {
-					"url": "data:image/png;base64,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",
-					"src": "data:image/png;base64,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",
-					"alt": "",
-					"size": null
-				},
-				afaaz: {
-					"portrait": {
-						"image": {
-							"alt": "Profile photo of me",
-							"url": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
-							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
-							"size": 77
-						},
-						"variation": "circle"
-					},
 					"description": {
-						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
-						"html": "<p>I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁</p>"
+						"markdown": "Some technologies i’ve been working with lately:\n\n",
+						"html": "<p>Some technologies i’ve been working with lately:</p>"
 					},
-					"": "",
-					"name": "Robin de Laater"
-				},
-				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
-				kpvqf: {
-					"heading": "Skills",
-					"items": [
-						{
-							"label": "JavaScript",
-							"icon": "akar-icons:javascript-fill"
-						},
-						{ "label": "Svelte", "icon": "cib:svelte" },
-						{
-							"label": "HTML",
-							"icon": "fontisto:html5"
-						},
-						{
-							"label": "CSS",
-							"icon": "mdi:language-css3"
-						}
-					],
-					"description": "<p>Some technologies i’ve been using lately:</p>",
 					"": ""
 				},
 				optkq: {
 					"heading": "Get in touch",
-					"email": "someone@somewhere.com",
+					"email": "robin@delaater.nl",
 					"": ""
 				},
 				vcrof: {
@@ -6041,11 +5749,11 @@ function create_fragment$8(ctx) {
 				descriptio: "Elit anim tempor",
 				description: "Cupidatat est tempor",
 				heading: "Get in touch",
-				email: "someone@somewhere.com"
+				email: "robin@delaater.nl"
 			}
 		});
 
-	component_6 = new Component$7({
+	component_5 = new Component$6({
 			props: {
 				social_links: [
 					{
@@ -6169,8 +5877,6 @@ function create_fragment$8(ctx) {
 			create_component(component_4.$$.fragment);
 			t4 = space();
 			create_component(component_5.$$.fragment);
-			t5 = space();
-			create_component(component_6.$$.fragment);
 		},
 		l(nodes) {
 			claim_component(component_0.$$.fragment, nodes);
@@ -6184,8 +5890,6 @@ function create_fragment$8(ctx) {
 			claim_component(component_4.$$.fragment, nodes);
 			t4 = claim_space(nodes);
 			claim_component(component_5.$$.fragment, nodes);
-			t5 = claim_space(nodes);
-			claim_component(component_6.$$.fragment, nodes);
 		},
 		m(target, anchor) {
 			mount_component(component_0, target, anchor);
@@ -6199,8 +5903,6 @@ function create_fragment$8(ctx) {
 			mount_component(component_4, target, anchor);
 			insert_hydration(target, t4, anchor);
 			mount_component(component_5, target, anchor);
-			insert_hydration(target, t5, anchor);
-			mount_component(component_6, target, anchor);
 			current = true;
 		},
 		p: noop,
@@ -6212,7 +5914,6 @@ function create_fragment$8(ctx) {
 			transition_in(component_3.$$.fragment, local);
 			transition_in(component_4.$$.fragment, local);
 			transition_in(component_5.$$.fragment, local);
-			transition_in(component_6.$$.fragment, local);
 			current = true;
 		},
 		o(local) {
@@ -6222,7 +5923,6 @@ function create_fragment$8(ctx) {
 			transition_out(component_3.$$.fragment, local);
 			transition_out(component_4.$$.fragment, local);
 			transition_out(component_5.$$.fragment, local);
-			transition_out(component_6.$$.fragment, local);
 			current = false;
 		},
 		d(detaching) {
@@ -6237,17 +5937,15 @@ function create_fragment$8(ctx) {
 			destroy_component(component_4, detaching);
 			if (detaching) detach(t4);
 			destroy_component(component_5, detaching);
-			if (detaching) detach(t5);
-			destroy_component(component_6, detaching);
 		}
 	};
 }
 
-class Component$8 extends SvelteComponent {
+class Component$7 extends SvelteComponent {
 	constructor(options) {
 		super();
-		init(this, options, null, create_fragment$8, safe_not_equal, {});
+		init(this, options, null, create_fragment$7, safe_not_equal, {});
 	}
 }
 
-export default Component$8;
+export default Component$7;
