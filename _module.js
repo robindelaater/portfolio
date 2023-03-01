@@ -4800,7 +4800,7 @@ function create_fragment$7(ctx) {
 				ti: "Veniam velit amet",
 				tit: "Veniam velit amet",
 				titl: "Veniam velit amet",
-				title: "Portfolio Template",
+				title: "Robin de Laater",
 				desc: "Elit anim tempor",
 				descr: "Elit anim tempor",
 				descri: "Elit anim tempor",
@@ -4808,7 +4808,7 @@ function create_fragment$7(ctx) {
 				descript: "Elit anim tempor",
 				descripti: "Elit anim tempor",
 				descriptio: "Elit anim tempor",
-				description: "Cupidatat est tempor"
+				description: "Web developer from The Netherlands"
 			}
 		});
 
@@ -4988,7 +4988,7 @@ function create_fragment$7(ctx) {
 				ti: "Veniam velit amet",
 				tit: "Veniam velit amet",
 				titl: "Veniam velit amet",
-				title: "Portfolio Template",
+				title: "Robin de Laater",
 				desc: "Elit anim tempor",
 				descr: "Elit anim tempor",
 				descri: "Elit anim tempor",
@@ -5188,7 +5188,7 @@ function create_fragment$7(ctx) {
 				ti: "Veniam velit amet",
 				tit: "Veniam velit amet",
 				titl: "Veniam velit amet",
-				title: "Portfolio Template",
+				title: "Robin de Laater",
 				desc: "Elit anim tempor",
 				descr: "Elit anim tempor",
 				descri: "Elit anim tempor",
@@ -5196,7 +5196,7 @@ function create_fragment$7(ctx) {
 				descript: "Elit anim tempor",
 				descripti: "Elit anim tempor",
 				descriptio: "Elit anim tempor",
-				description: "Cupidatat est tempor",
+				description: "Web developer from The Netherlands",
 				heading: "Featured Projects",
 				items: [
 					{
@@ -5401,7 +5401,7 @@ function create_fragment$7(ctx) {
 				ti: "Veniam velit amet",
 				tit: "Veniam velit amet",
 				titl: "Veniam velit amet",
-				title: "Portfolio Template",
+				title: "Robin de Laater",
 				desc: "Elit anim tempor",
 				descr: "Elit anim tempor",
 				descri: "Elit anim tempor",
@@ -5613,7 +5613,7 @@ function create_fragment$7(ctx) {
 				ti: "Veniam velit amet",
 				tit: "Veniam velit amet",
 				titl: "Veniam velit amet",
-				title: "Portfolio Template",
+				title: "Robin de Laater",
 				desc: "Elit anim tempor",
 				descr: "Elit anim tempor",
 				descri: "Elit anim tempor",
@@ -5621,7 +5621,7 @@ function create_fragment$7(ctx) {
 				descript: "Elit anim tempor",
 				descripti: "Elit anim tempor",
 				descriptio: "Elit anim tempor",
-				description: "Cupidatat est tempor",
+				description: "Web developer from The Netherlands",
 				heading: "Get in touch",
 				email: "robin@delaater.nl"
 			}
@@ -5726,7 +5726,7 @@ function create_fragment$7(ctx) {
 				ti: "Veniam velit amet",
 				tit: "Veniam velit amet",
 				titl: "Veniam velit amet",
-				title: "Portfolio Template",
+				title: "Robin de Laater",
 				desc: "Elit anim tempor",
 				descr: "Elit anim tempor",
 				descri: "Elit anim tempor",
@@ -5734,7 +5734,7 @@ function create_fragment$7(ctx) {
 				descript: "Elit anim tempor",
 				descripti: "Elit anim tempor",
 				descriptio: "Elit anim tempor",
-				description: "Cupidatat est tempor"
+				description: "Web developer from The Netherlands"
 			}
 		});
 
