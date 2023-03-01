@@ -2885,6 +2885,7 @@ function create_fragment$2(ctx) {
 	let t1;
 	let t2;
 	let div0;
+	let raw_value = /*description*/ ctx[2].html + "";
 	let t3;
 	let ul;
 	let current;
@@ -2990,7 +2991,7 @@ function create_fragment$2(ctx) {
 			append_hydration(h1, t1);
 			append_hydration(div1, t2);
 			append_hydration(div1, div0);
-			div0.innerHTML = /*description*/ ctx[2];
+			div0.innerHTML = raw_value;
 			append_hydration(div1, t3);
 			append_hydration(div1, ul);
 
@@ -3014,7 +3015,7 @@ function create_fragment$2(ctx) {
 			}
 
 			if (!current || dirty[0] & /*name*/ 2) set_data(t1, /*name*/ ctx[1]);
-			if (!current || dirty[0] & /*description*/ 4) div0.innerHTML = /*description*/ ctx[2];
+			if ((!current || dirty[0] & /*description*/ 4) && raw_value !== (raw_value = /*description*/ ctx[2].html + "")) div0.innerHTML = raw_value;
 			if (dirty[0] & /*social_links*/ 1) {
 				each_value = /*social_links*/ ctx[0];
 				let i;
@@ -5112,7 +5113,7 @@ function create_fragment$8(ctx) {
 						"size": null
 					}
 				},
-				name: "Abdelfatah Ahmed",
+				name: "Robin de Laater",
 				theme: "dark",
 				variation: "dark",
 				f: {
@@ -5149,9 +5150,12 @@ function create_fragment$8(ctx) {
 						},
 						"variation": "circle"
 					},
-					"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>",
+					"description": {
+						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
+						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+					},
 					"": "",
-					"name": "Abdelfatah Ahmed"
+					"name": "Robin de Laater"
 				},
 				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
 				kpvqf: {
@@ -5253,7 +5257,10 @@ function create_fragment$8(ctx) {
 				descript: "Elit anim tempor",
 				descripti: "Elit anim tempor",
 				descriptio: "Elit anim tempor",
-				description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>",
+				description: {
+					"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
+					"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+				},
 				portrait: {
 					"image": {
 						"alt": "Profile photo of me",
@@ -5446,9 +5453,12 @@ function create_fragment$8(ctx) {
 						},
 						"variation": "circle"
 					},
-					"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>",
+					"description": {
+						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
+						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+					},
 					"": "",
-					"name": "Abdelfatah Ahmed"
+					"name": "Robin de Laater"
 				},
 				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
 				kpvqf: {
@@ -5668,9 +5678,12 @@ function create_fragment$8(ctx) {
 						},
 						"variation": "circle"
 					},
-					"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>",
+					"description": {
+						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
+						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+					},
 					"": "",
-					"name": "Abdelfatah Ahmed"
+					"name": "Robin de Laater"
 				},
 				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
 				kpvqf: {
@@ -5868,9 +5881,12 @@ function create_fragment$8(ctx) {
 						},
 						"variation": "circle"
 					},
-					"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>",
+					"description": {
+						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
+						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+					},
 					"": "",
-					"name": "Abdelfatah Ahmed"
+					"name": "Robin de Laater"
 				},
 				ooupd: "<h2>Welcome to my portfolio</h2><p>This is some copy to help you get to know about my interests, experience, and top projects. I may share a few personal things here too.</p>",
 				kpvqf: {
