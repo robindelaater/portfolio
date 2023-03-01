@@ -2815,7 +2815,14 @@ function create_each_block(ctx) {
 		l(nodes) {
 			li = claim_element(nodes, "LI", { class: true });
 			var li_nodes = children(li);
-			a = claim_element(li_nodes, "A", { href: true, class: true });
+
+			a = claim_element(li_nodes, "A", {
+				href: true,
+				target: true,
+				rel: true,
+				class: true
+			});
+
 			var a_nodes = children(a);
 			claim_component(icon.$$.fragment, a_nodes);
 			t0 = claim_space(a_nodes);
@@ -2831,6 +2838,8 @@ function create_each_block(ctx) {
 		h() {
 			attr(span, "class", "svelte-1byd7us");
 			attr(a, "href", a_href_value = /*link*/ ctx[30].url);
+			attr(a, "target", "_blank");
+			attr(a, "rel", "noreferrer");
 			attr(a, "class", "svelte-1byd7us");
 			attr(li, "class", "svelte-1byd7us");
 		},
@@ -4976,16 +4985,23 @@ function create_fragment$8(ctx) {
 					{
 						"link": {
 							"label": "Twitter",
-							"url": "https://twitter.com"
+							"url": "https://twitter.com/robindelaater"
 						},
 						"icon": "mdi:twitter"
 					},
 					{
 						"link": {
 							"label": "Github",
-							"url": "https://github.com"
+							"url": "https://github.com/robindelaater"
 						},
 						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
 					}
 				],
 				site_nav: [
@@ -5080,16 +5096,23 @@ function create_fragment$8(ctx) {
 					{
 						"link": {
 							"label": "Twitter",
-							"url": "https://twitter.com"
+							"url": "https://twitter.com/robindelaater"
 						},
 						"icon": "mdi:twitter"
 					},
 					{
 						"link": {
 							"label": "Github",
-							"url": "https://github.com"
+							"url": "https://github.com/robindelaater"
 						},
 						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
 					}
 				],
 				site_nav: [
@@ -5144,15 +5167,15 @@ function create_fragment$8(ctx) {
 					"portrait": {
 						"image": {
 							"alt": "Profile photo of me",
-							"url": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"src": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"size": null
+							"url": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"size": 77
 						},
 						"variation": "circle"
 					},
 					"description": {
-						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
-						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
+						"html": "<p>I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁</p>"
 					},
 					"": "",
 					"name": "Robin de Laater"
@@ -5258,15 +5281,15 @@ function create_fragment$8(ctx) {
 				descripti: "Elit anim tempor",
 				descriptio: "Elit anim tempor",
 				description: {
-					"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
-					"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+					"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
+					"html": "<p>I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁</p>"
 				},
 				portrait: {
 					"image": {
 						"alt": "Profile photo of me",
-						"url": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-						"src": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-						"size": null
+						"url": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+						"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+						"size": 77
 					},
 					"variation": "circle"
 				}
@@ -5279,16 +5302,23 @@ function create_fragment$8(ctx) {
 					{
 						"link": {
 							"label": "Twitter",
-							"url": "https://twitter.com"
+							"url": "https://twitter.com/robindelaater"
 						},
 						"icon": "mdi:twitter"
 					},
 					{
 						"link": {
 							"label": "Github",
-							"url": "https://github.com"
+							"url": "https://github.com/robindelaater"
 						},
 						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
 					}
 				],
 				site_nav: [
@@ -5383,16 +5413,23 @@ function create_fragment$8(ctx) {
 					{
 						"link": {
 							"label": "Twitter",
-							"url": "https://twitter.com"
+							"url": "https://twitter.com/robindelaater"
 						},
 						"icon": "mdi:twitter"
 					},
 					{
 						"link": {
 							"label": "Github",
-							"url": "https://github.com"
+							"url": "https://github.com/robindelaater"
 						},
 						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
 					}
 				],
 				site_nav: [
@@ -5447,15 +5484,15 @@ function create_fragment$8(ctx) {
 					"portrait": {
 						"image": {
 							"alt": "Profile photo of me",
-							"url": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"src": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"size": null
+							"url": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"size": 77
 						},
 						"variation": "circle"
 					},
 					"description": {
-						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
-						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
+						"html": "<p>I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁</p>"
 					},
 					"": "",
 					"name": "Robin de Laater"
@@ -5608,16 +5645,23 @@ function create_fragment$8(ctx) {
 					{
 						"link": {
 							"label": "Twitter",
-							"url": "https://twitter.com"
+							"url": "https://twitter.com/robindelaater"
 						},
 						"icon": "mdi:twitter"
 					},
 					{
 						"link": {
 							"label": "Github",
-							"url": "https://github.com"
+							"url": "https://github.com/robindelaater"
 						},
 						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
 					}
 				],
 				site_nav: [
@@ -5672,15 +5716,15 @@ function create_fragment$8(ctx) {
 					"portrait": {
 						"image": {
 							"alt": "Profile photo of me",
-							"url": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"src": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"size": null
+							"url": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"size": 77
 						},
 						"variation": "circle"
 					},
 					"description": {
-						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
-						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
+						"html": "<p>I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁</p>"
 					},
 					"": "",
 					"name": "Robin de Laater"
@@ -5811,16 +5855,23 @@ function create_fragment$8(ctx) {
 					{
 						"link": {
 							"label": "Twitter",
-							"url": "https://twitter.com"
+							"url": "https://twitter.com/robindelaater"
 						},
 						"icon": "mdi:twitter"
 					},
 					{
 						"link": {
 							"label": "Github",
-							"url": "https://github.com"
+							"url": "https://github.com/robindelaater"
 						},
 						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
 					}
 				],
 				site_nav: [
@@ -5875,15 +5926,15 @@ function create_fragment$8(ctx) {
 					"portrait": {
 						"image": {
 							"alt": "Profile photo of me",
-							"url": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"src": "https://images.unsplash.com/photo-1570158268183-d296b2892211?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=300&q=80",
-							"size": null
+							"url": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"src": "https://lrihfymlcquuaucydnne.supabase.co/storage/v1/object/public/sites/portfolio/assets/IMG_4312.JPG",
+							"size": 77
 						},
 						"variation": "circle"
 					},
 					"description": {
-						"markdown": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.\n\n",
-						"html": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Id praesent feugiat libero maecenas urna, vel.</p>"
+						"markdown": "I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁",
+						"html": "<p>I'm a web developer, car enthusiast and guitarist from Purmerend, The Netherlands.\nFeel free to get in touch through social media or email. I'm always available to get some coffee!😁</p>"
 					},
 					"": "",
 					"name": "Robin de Laater"
@@ -6000,16 +6051,23 @@ function create_fragment$8(ctx) {
 					{
 						"link": {
 							"label": "Twitter",
-							"url": "https://twitter.com"
+							"url": "https://twitter.com/robindelaater"
 						},
 						"icon": "mdi:twitter"
 					},
 					{
 						"link": {
 							"label": "Github",
-							"url": "https://github.com"
+							"url": "https://github.com/robindelaater"
 						},
 						"icon": "mdi:github"
+					},
+					{
+						"link": {
+							"label": "Email",
+							"url": "mailto:robin@delaater.nl"
+						},
+						"icon": "mdi:envelope"
 					}
 				],
 				site_nav: [
