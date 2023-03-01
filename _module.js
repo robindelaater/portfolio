@@ -5000,11 +5000,11 @@ function create_fragment$7(ctx) {
 					"heading": "Featured Projects",
 					"items": [
 						{
-							"date": "01.01.22",
+							"date": "08 November 2022",
 							"title": "MultiSafepay JS Client",
 							"description": {
-								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
-								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript & NPM.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript &amp; NPM.</p>"
 							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5014,7 +5014,10 @@ function create_fragment$7(ctx) {
 							},
 							"links": [
 								{
-									"link": { "label": "Visit Site", "url": "/" }
+									"link": {
+										"label": "Check it out on GitHub",
+										"url": "https://github.com/robindelaater/multisafepay-js"
+									}
 								}
 							]
 						},
@@ -5216,11 +5219,11 @@ function create_fragment$7(ctx) {
 					"heading": "Featured Projects",
 					"items": [
 						{
-							"date": "01.01.22",
+							"date": "08 November 2022",
 							"title": "MultiSafepay JS Client",
 							"description": {
-								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
-								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript & NPM.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript &amp; NPM.</p>"
 							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5230,7 +5233,10 @@ function create_fragment$7(ctx) {
 							},
 							"links": [
 								{
-									"link": { "label": "Visit Site", "url": "/" }
+									"link": {
+										"label": "Check it out on GitHub",
+										"url": "https://github.com/robindelaater/multisafepay-js"
+									}
 								}
 							]
 						},
@@ -5293,11 +5299,11 @@ function create_fragment$7(ctx) {
 				heading: "Featured Projects",
 				items: [
 					{
-						"date": "01.01.22",
+						"date": "08 November 2022",
 						"title": "MultiSafepay JS Client",
 						"description": {
-							"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
-							"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+							"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript & NPM.",
+							"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript &amp; NPM.</p>"
 						},
 						"thumbnail": {
 							"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5307,7 +5313,10 @@ function create_fragment$7(ctx) {
 						},
 						"links": [
 							{
-								"link": { "label": "Visit Site", "url": "/" }
+								"link": {
+									"label": "Check it out on GitHub",
+									"url": "https://github.com/robindelaater/multisafepay-js"
+								}
 							}
 						]
 					},
@@ -5461,11 +5470,11 @@ function create_fragment$7(ctx) {
 					"heading": "Featured Projects",
 					"items": [
 						{
-							"date": "01.01.22",
+							"date": "08 November 2022",
 							"title": "MultiSafepay JS Client",
 							"description": {
-								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
-								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript & NPM.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript &amp; NPM.</p>"
 							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5475,7 +5484,10 @@ function create_fragment$7(ctx) {
 							},
 							"links": [
 								{
-									"link": { "label": "Visit Site", "url": "/" }
+									"link": {
+										"label": "Check it out on GitHub",
+										"url": "https://github.com/robindelaater/multisafepay-js"
+									}
 								}
 							]
 						},
@@ -5689,11 +5701,11 @@ function create_fragment$7(ctx) {
 					"heading": "Featured Projects",
 					"items": [
 						{
-							"date": "01.01.22",
+							"date": "08 November 2022",
 							"title": "MultiSafepay JS Client",
 							"description": {
-								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
-								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript & NPM.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nTechnologies used: TypeScript &amp; NPM.</p>"
 							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5703,7 +5715,10 @@ function create_fragment$7(ctx) {
 							},
 							"links": [
 								{
-									"link": { "label": "Visit Site", "url": "/" }
+									"link": {
+										"label": "Check it out on GitHub",
+										"url": "https://github.com/robindelaater/multisafepay-js"
+									}
 								}
 							]
 						},
