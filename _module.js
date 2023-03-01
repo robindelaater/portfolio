@@ -3326,7 +3326,7 @@ function create_each_block$1(ctx) {
 	let t2;
 	let t3;
 	let div0;
-	let raw_value = /*item*/ ctx[30].description + "";
+	let raw_value = /*item*/ ctx[30].description.html + "";
 	let t4;
 	let div1;
 	let t5;
@@ -3430,7 +3430,7 @@ function create_each_block$1(ctx) {
 		p(ctx, dirty) {
 			if (dirty[0] & /*items*/ 2 && t0_value !== (t0_value = /*item*/ ctx[30].date + "")) set_data(t0, t0_value);
 			if (dirty[0] & /*items*/ 2 && t2_value !== (t2_value = /*item*/ ctx[30].title + "")) set_data(t2, t2_value);
-			if (dirty[0] & /*items*/ 2 && raw_value !== (raw_value = /*item*/ ctx[30].description + "")) div0.innerHTML = raw_value;
+			if (dirty[0] & /*items*/ 2 && raw_value !== (raw_value = /*item*/ ctx[30].description.html + "")) div0.innerHTML = raw_value;
 			if (dirty[0] & /*items*/ 2) {
 				each_value_1 = /*item*/ ctx[30].links;
 				let i;
@@ -5001,8 +5001,11 @@ function create_fragment$7(ctx) {
 					"items": [
 						{
 							"date": "01.01.22",
-							"title": "First project",
-							"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra senectus ipsum a non. Malesuada magna etiam great dignissim curabitur aliquam.</p>",
+							"title": "MultiSafepay JS Client",
+							"description": {
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
 								"src": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5214,8 +5217,11 @@ function create_fragment$7(ctx) {
 					"items": [
 						{
 							"date": "01.01.22",
-							"title": "First project",
-							"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra senectus ipsum a non. Malesuada magna etiam great dignissim curabitur aliquam.</p>",
+							"title": "MultiSafepay JS Client",
+							"description": {
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
 								"src": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5288,8 +5294,11 @@ function create_fragment$7(ctx) {
 				items: [
 					{
 						"date": "01.01.22",
-						"title": "First project",
-						"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra senectus ipsum a non. Malesuada magna etiam great dignissim curabitur aliquam.</p>",
+						"title": "MultiSafepay JS Client",
+						"description": {
+							"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
+							"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+						},
 						"thumbnail": {
 							"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
 							"src": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5453,8 +5462,11 @@ function create_fragment$7(ctx) {
 					"items": [
 						{
 							"date": "01.01.22",
-							"title": "First project",
-							"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra senectus ipsum a non. Malesuada magna etiam great dignissim curabitur aliquam.</p>",
+							"title": "MultiSafepay JS Client",
+							"description": {
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
 								"src": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
@@ -5678,8 +5690,11 @@ function create_fragment$7(ctx) {
 					"items": [
 						{
 							"date": "01.01.22",
-							"title": "First project",
-							"description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra senectus ipsum a non. Malesuada magna etiam great dignissim curabitur aliquam.</p>",
+							"title": "MultiSafepay JS Client",
+							"description": {
+								"markdown": "This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.",
+								"html": "<p>This project was done during my time at MultiSafepay. I've built a JS client for easier integration with the MultiSafepay payments API. Easily install it in your node project using NPM.<br><br>\nProject was built using TypeScript.</p>"
+							},
 							"thumbnail": {
 								"url": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
 								"src": "https://images.unsplash.com/photo-1653972677660-71217674c326?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
