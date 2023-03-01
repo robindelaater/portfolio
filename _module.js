@@ -5020,6 +5020,25 @@ function create_fragment$7(ctx) {
 									}
 								}
 							]
+						},
+						{
+							"date": "01.01.22",
+							"title": "Second project",
+							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
+							"thumbnail": {
+								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"alt": "Mountains by the sea",
+								"size": null
+							},
+							"links": [
+								{
+									"link": {
+										"label": "Visit Site",
+										"url": "/second-project"
+									}
+								}
+							]
 						}
 					]
 				},
@@ -5220,6 +5239,25 @@ function create_fragment$7(ctx) {
 									}
 								}
 							]
+						},
+						{
+							"date": "01.01.22",
+							"title": "Second project",
+							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
+							"thumbnail": {
+								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"alt": "Mountains by the sea",
+								"size": null
+							},
+							"links": [
+								{
+									"link": {
+										"label": "Visit Site",
+										"url": "/second-project"
+									}
+								}
+							]
 						}
 					]
 				},
@@ -5278,6 +5316,25 @@ function create_fragment$7(ctx) {
 								"link": {
 									"label": "Check it out on GitHub",
 									"url": "https://github.com/robindelaater/multisafepay-js"
+								}
+							}
+						]
+					},
+					{
+						"date": "01.01.22",
+						"title": "Second project",
+						"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
+						"thumbnail": {
+							"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+							"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+							"alt": "Mountains by the sea",
+							"size": null
+						},
+						"links": [
+							{
+								"link": {
+									"label": "Visit Site",
+									"url": "/second-project"
 								}
 							}
 						]
@@ -5430,6 +5487,25 @@ function create_fragment$7(ctx) {
 									"link": {
 										"label": "Check it out on GitHub",
 										"url": "https://github.com/robindelaater/multisafepay-js"
+									}
+								}
+							]
+						},
+						{
+							"date": "01.01.22",
+							"title": "Second project",
+							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
+							"thumbnail": {
+								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"alt": "Mountains by the sea",
+								"size": null
+							},
+							"links": [
+								{
+									"link": {
+										"label": "Visit Site",
+										"url": "/second-project"
 									}
 								}
 							]
@@ -5642,6 +5718,25 @@ function create_fragment$7(ctx) {
 									"link": {
 										"label": "Check it out on GitHub",
 										"url": "https://github.com/robindelaater/multisafepay-js"
+									}
+								}
+							]
+						},
+						{
+							"date": "01.01.22",
+							"title": "Second project",
+							"description": "<p>Magna reprehenderit occaecat proident. Magna est quis sunt nisi ullamco amet commodo.</p>",
+							"thumbnail": {
+								"url": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"src": "https://images.unsplash.com/photo-1649087921869-4ea8cf7364bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80",
+								"alt": "Mountains by the sea",
+								"size": null
+							},
+							"links": [
+								{
+									"link": {
+										"label": "Visit Site",
+										"url": "/second-project"
 									}
 								}
 							]
