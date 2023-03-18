@@ -11,8 +11,36 @@ h6 {
 	font-family: 'Satoshi', sans-serif;
 }
 
-.stroke-white {
-	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: white;
-	color: transparent;
+a {
+	@apply text-purple-500 italic;
+}
+
+.nav-item {
+	@apply text-white;
+}
+
+.skills {
+	grid-template-columns: 1fr 1fr 1fr;
+	@apply gap-4;
+}
+
+.skill {
+	@apply rounded-md p-2;
+}
+
+.project-card {
+	@apply rounded-md p-2 overflow-hidden relative w-full h-72 transition-all duration-150 shadow-md;
+}
+
+.project-card:hover {
+	@apply -translate-y-2 transition-all duration-150;
+}
+
+.project-card__image {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	height: 100%;
+	@apply object-cover;
 }
