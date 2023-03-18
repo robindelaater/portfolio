@@ -1,6 +1,6 @@
 <script>
-	import Header from '$lib/components/Header.svelte';
-	import AboutSection from '$lib/components/AboutSection.svelte';
+	import Header from '../lib/components/Header.svelte';
+	import AboutSection from '../lib/components/AboutSection.svelte';
 </script>
 
 <section class="sticky top-0 bg-gradient-to-tr from-indigo-500 to-purple-400">
