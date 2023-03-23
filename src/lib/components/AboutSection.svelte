@@ -1,6 +1,6 @@
 <section class="sticky bg-white z-10">
 	<div
-		class="flex flex-col md:flex-row md:items-center w-full justify-between gap-6 container mx-auto py-12 px-4"
+		class="flex flex-col md:flex-row md:items-center w-full justify-between gap-6 container mx-auto py-8 md:py-12 px-4"
 	>
 		<div class="md:w-1/2">
 			<h2 class="text-lg font-semibold mb-2">About me</h2>
@@ -11,7 +11,7 @@
 				complex web applications, I've got a pretty solid understanding of both code and
 				communication.
 			</p>
-			<p class="font-light">
+			<p class="text-neutral-600">
 				Right now, I'm part of an awesome crew at <a target="_blank" href="https://shopmonkey.nl"
 					>Shopmonkey</a
 				>, where we're building some seriously cool products!

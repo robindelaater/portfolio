@@ -6,24 +6,20 @@
 <section class="sticky top-0 bg-gradient-to-tr from-indigo-500 to-purple-400">
 	<Header />
 
-	<div class="flex flex-col relative md:flex-row sm:justify-center w-full container mx-auto px-4">
+	<div class="flex flex-col relative w-full container mx-auto pb-12 px-4">
 		<p
-			class="font-bold text-xl md:text-4xl lg:text-6xl leading-normal text-white self-center mb-12 md:mb-auto"
+			class="font-bold text-xl md:max-w-6xl md:text-4xl lg:text-6xl leading-normal text-white self-center mb-12 md:mb-auto"
 		>
 			Hi! My name is Robin de Laater.<br /> A <i>creative developer</i> who loves starting new projects.
 		</p>
-		<img
-			class="self-end w-24 md:w-1/2 -z-10 absolute bottom-0 md:relative"
-			src="/memoji.png"
-			alt="🦍"
-		/>
+		<img class="self-end w-24 md:w-40 -z-10 absolute bottom-0" src="/memoji.png" alt="🦍" />
 	</div>
 </section>
 
 <AboutSection />
 
 <section class="sticky z-10 bg-white">
-	<div class="container mx-auto px-4 py-12">
+	<div class="container mx-auto px-4 py-8 md:py-12">
 		<p class="text-2xl font-semibold mb-2">Projects</p>
 
 		<div class="projects grid md:grid-flow-col md:grid-cols-3 gap-4">
@@ -66,17 +62,13 @@
 
 <section class="sticky top-0 z-20 bg-neutral-800">
 	<div
-		class="container mx-auto flex flex-col items-center justify-center text-center py-12 px-4 gap-4"
+		class="container mx-auto flex flex-col items-center justify-center text-center py-8 md:py-12 px-4 gap-4"
 	>
 		<p class="text-white font-bold text-2xl md:text-4xl">Don't be shy, get in touch.</p>
 		<p class="text-white mb-4">
 			Wanna grab a cup of joe and chat about all the awesome stuff we could create together?
 		</p>
-		<a
-			href="mailto:robin@delaater.nl"
-			class="bg-gradient-to-tr from-indigo-400 to-purple-500 text-white rounded-md py-2 px-4 font-semibold text-lg hover:shadow-lg hover:shadow-purple-500/10 hover:bg-gradient-to-tr hover:from-indigo-500 hover:to-purple-400 transition-all duration-150"
-			>Contact me</a
-		>
+		<a href="mailto:robin@delaater.nl" class="button">Contact me </a>
 	</div>
 </section>
 
