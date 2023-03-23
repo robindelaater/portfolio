@@ -6,11 +6,17 @@
 <section class="sticky top-0 bg-gradient-to-tr from-indigo-500 to-purple-400">
 	<Header />
 
-	<div class="flex flex-col md:flex-row sm:justify-center w-full container mx-auto px-4">
-		<p class="font-bold text-xl md:text-4xl lg:text-6xl leading-normal text-white self-center">
+	<div class="flex flex-col relative md:flex-row sm:justify-center w-full container mx-auto px-4">
+		<p
+			class="font-bold text-xl md:text-4xl lg:text-6xl leading-normal text-white self-center mb-12 md:mb-auto"
+		>
 			Hi! My name is Robin de Laater.<br /> A <i>creative developer</i> who loves starting new projects.
 		</p>
-		<img class="self-end w-24 md:w-1/2" src="/memoji.png" alt="🦍" />
+		<img
+			class="self-end w-24 md:w-1/2 -z-10 absolute bottom-0 md:relative"
+			src="/memoji.png"
+			alt="🦍"
+		/>
 	</div>
 </section>
 

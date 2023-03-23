@@ -3,15 +3,15 @@
 		class="flex flex-col md:flex-row md:items-center w-full justify-between gap-6 container mx-auto py-12 px-4"
 	>
 		<div class="md:w-1/2">
-			<h2 class="text-2xl font-semibold mb-2">About me</h2>
-			<p class="mb-2 leading-6 text-xl">
+			<h2 class="text-lg font-semibold mb-2">About me</h2>
+			<p class="mb-2 leading-6">
 				I'm a creative developer who loves taking on new projects and making magic happen. In the
 				past few years, I've been lucky enough to work with some amazing startups, scale-ups, and
 				even big(ger) names like MultiSafepay. From providing top-notch client support to working on
 				complex web applications, I've got a pretty solid understanding of both code and
 				communication.
 			</p>
-			<p class="text-xl">
+			<p class="font-light">
 				Right now, I'm part of an awesome crew at <a target="_blank" href="https://shopmonkey.nl"
 					>Shopmonkey</a
 				>, where we're building some seriously cool products!
