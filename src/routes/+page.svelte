@@ -69,7 +69,7 @@
 
 <PurpleBlob />
 
-<div class="bg-white w-full h-full fixed top-0 left-0 z-10 transition-all duration-200 flex flex-col items-center justify-center {showContact ? 'translate-x-0' : 'translate-x-full'}">
+<div class="bg-white w-full h-full fixed top-0 left-0 z-10 transition-all duration-200 flex flex-col items-center justify-center p-4 {showContact ? 'translate-x-0' : 'translate-x-full'}">
 	<h4 class="text-2xl font-semibold mb-2 text-center">What can I do for you?</h4>
 	<form action="" class="contact-form flex flex-col">
 		<label for="name">
